@@ -3,5 +3,5 @@ import 'package:demo/MyApp.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyAnimation());
+  runApp(MyApp());
 }

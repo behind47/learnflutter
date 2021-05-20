@@ -1,3 +1,4 @@
+import 'package:demo/MyAnimation.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, required this.title}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -41,7 +42,7 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -105,5 +106,36 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    leadAnimation();
+  }
+
+  leadAnimation() {
+    AnimationController _controller = AnimationController(
+      duration: const Duration(seconds: 10),
+      vsync: this,
+    )..repeat();
+    var overlayEntry;
+    overlayEntry = OverlayEntry(
+      opaque: false,
+      builder: (context) => Stack(
+        children: <Widget>[
+          Positioned(
+            child: MyAnimation(),
+            top: 200,
+            left: 100,
+            height: 200,
+            width: 200,
+          )
+        ],
+      ),
+    );
+    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+      Overlay.of(context)!.insert(overlayEntry);
+    });
   }
 }
