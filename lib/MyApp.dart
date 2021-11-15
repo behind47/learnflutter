@@ -1,4 +1,4 @@
-import 'package:demo/MyAnimation.dart';
+import 'package:demo/StaggerAnimation.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -125,7 +125,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
       builder: (context) => Stack(
         children: <Widget>[
           Positioned(
-            child: MyAnimation(),
+            child: StaggerAnimation(controller: _controller,),
             top: 200,
             left: 100,
             height: 200,
