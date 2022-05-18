@@ -1,4 +1,4 @@
-import 'package:demo/StaggerAnimation.dart';
+import 'package:learnflutter/StaggerAnimation.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -134,7 +134,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         ],
       ),
     );
-    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       Overlay.of(context)!.insert(overlayEntry);
     });
   }

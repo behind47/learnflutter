@@ -1,11 +1,12 @@
-import 'package:demo/MyApp.dart';
-import 'package:demo/MyContainer.dart';
-import 'package:demo/MyCusScrollView.dart';
-import 'package:demo/MyTabbarView.dart';
-import 'package:demo/paint/paint_page.dart';
-import 'package:demo/widget/my_farctionally_sized_box.dart';
-import 'package:demo/widget/my_nested_list.dart';
-import 'package:demo/widget/my_rich_text_page.dart';
+import 'package:learnflutter/MyApp.dart';
+import 'package:learnflutter/MyContainer.dart';
+import 'package:learnflutter/MyCusScrollView.dart';
+import 'package:learnflutter/MyTabbarView.dart';
+import 'package:learnflutter/ffi/native_add_page.dart';
+import 'package:learnflutter/paint/paint_page.dart';
+import 'package:learnflutter/widget/my_farctionally_sized_box.dart';
+import 'package:learnflutter/widget/my_nested_list.dart';
+import 'package:learnflutter/widget/my_rich_text_page.dart';
 import 'package:flutter/material.dart';
 
 import 'my_capture_page.dart';
@@ -39,6 +40,7 @@ class EntryListState extends State<EntryList> {
             buildItem('富文本', MyRichTextPage()),
             buildItem('截图', MyCapturePage()),
             buildItem('绘制', PaintPage()),
+            buildItem('FFI', NativeAddPage()),
           ],
         ))
       ],
