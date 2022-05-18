@@ -10,13 +10,18 @@ class NativeAddPage extends StatefulWidget {
 }
 
 class NativeAddPageState extends State<NativeAddPage> {
-
   String _platformVersion = 'Unknown';
   final _learnflutterPlugin = Learnflutter();
+  late final DynamicLibrary nativeAddLib;
+  late final int Function(int x, int y) nativeAdd;
 
   @override
   void initState() {
     super.initState();
+    nativeAddLib = DynamicLibrary.process();
+    nativeAdd = nativeAddLib
+        .lookup<NativeFunction<Int32 Function(Int32, Int32)>>('native_add')
+        .asFunction();
     initPlatformState();
   }
 
@@ -26,8 +31,8 @@ class NativeAddPageState extends State<NativeAddPage> {
     // Platform messages may fail, so we use a try/catch PlatformException.
     // We also handle the message potentially returning null.
     try {
-      platformVersion =
-          await _learnflutterPlugin.getPlatformVersion() ?? 'Unknown platform version';
+      platformVersion = await _learnflutterPlugin.getPlatformVersion() ??
+          'Unknown platform version';
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
@@ -49,11 +54,13 @@ class NativeAddPageState extends State<NativeAddPage> {
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+        body: Column(
+          children: [
+            Text('Running on: $_platformVersion\n'),
+            Text('1+1=${nativeAdd(1, 1)}'),
+          ],
         ),
       ),
     );
   }
-
 }
