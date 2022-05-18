@@ -1,8 +1,35 @@
+import 'dart:async';
+
 import 'package:demo/EntryList.dart';
-import 'package:demo/MyApp.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+
+// void main() {
+//   debugRepaintRainbowEnabled = true;
+//   runApp(const MaterialApp(
+//     title: 'materialApp',
+//     home: IndexPage(),
+//   ));
+// }
+
+// class IndexPage extends StatelessWidget {
+//   const IndexPage({Key? key}) : super(key: key);
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text("indexPage"),
+//       ),
+//       body: Center(
+//         child: EntryList(),
+//       ),
+//     );
+//   }
+// }
 
 void main() {
+  debugRepaintRainbowEnabled = true;
   runApp(const MaterialApp(
     title: 'materialApp',
     home: IndexPage(),
@@ -11,7 +38,6 @@ void main() {
 
 class IndexPage extends StatelessWidget {
   const IndexPage({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
