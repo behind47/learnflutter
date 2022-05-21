@@ -1,0 +1,11 @@
+framework module learnflutter {
+  umbrella header "learnflutter-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module learnflutter.Swift {
+    header "learnflutter-Swift.h"
+    requires objc
+}
