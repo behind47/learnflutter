@@ -2,7 +2,7 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:learnflutter/learnflutter.dart';
+import 'package:learnflutter/channel/platform_channel.dart';
 
 class NativeAddPage extends StatefulWidget {
   @override
@@ -11,9 +11,9 @@ class NativeAddPage extends StatefulWidget {
 
 class NativeAddPageState extends State<NativeAddPage> {
   String _platformVersion = 'Unknown';
-  final _learnflutterPlugin = Learnflutter();
   late final DynamicLibrary nativeAddLib;
   late final int Function(int x, int y) nativeAdd;
+  String _batteryLevel = '';
 
   @override
   void initState() {
@@ -31,11 +31,17 @@ class NativeAddPageState extends State<NativeAddPage> {
     // Platform messages may fail, so we use a try/catch PlatformException.
     // We also handle the message potentially returning null.
     try {
-      platformVersion = await _learnflutterPlugin.getPlatformVersion() ??
+      var platformChannel1 = PlatformChannel(PlatformChannel.platformChannelName);
+      print('platformChannel1 : ${platformChannel1.hashCode}');
+      platformVersion = await platformChannel1.getPlatformVersion() ??
           'Unknown platform version';
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
+
+    var platformChannel2 = PlatformChannel(PlatformChannel.platformChannelName);
+    String batteryLevel = await platformChannel2.getBatteryLevel();
+    print('platformChannel2 : ${platformChannel2.hashCode}');
 
     // If the widget was removed from the tree while the asynchronous platform
     // message was in flight, we want to discard the reply rather than calling
@@ -44,6 +50,7 @@ class NativeAddPageState extends State<NativeAddPage> {
 
     setState(() {
       _platformVersion = platformVersion;
+      _batteryLevel = batteryLevel;
     });
   }
 
@@ -58,6 +65,7 @@ class NativeAddPageState extends State<NativeAddPage> {
           children: [
             Text('Running on: $_platformVersion\n'),
             Text('1+1=${nativeAdd(1, 1)}'),
+            Text('device batteryLevel: $_batteryLevel'),
           ],
         ),
       ),

@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:learnflutter/learnflutter.dart';
-import 'package:learnflutter/learnflutter_platform_interface.dart';
-import 'package:learnflutter/learnflutter_method_channel.dart';
+import 'package:learnflutter/channel/learnflutter_platform_interface.dart';
+import 'package:learnflutter/channel/learnflutter_method_channel.dart';
+import 'package:learnflutter/channel/platform_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 class MockLearnflutterPlatform 
@@ -20,7 +20,7 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    Learnflutter learnflutterPlugin = Learnflutter();
+    PlatformChannel learnflutterPlugin = PlatformChannel();
     MockLearnflutterPlatform fakePlatform = MockLearnflutterPlatform();
     LearnflutterPlatform.instance = fakePlatform;
   

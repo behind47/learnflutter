@@ -3,7 +3,7 @@ import UIKit
 
 public class SwiftLearnflutterPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "learnflutter", binaryMessenger: registrar.messenger())
+    let channel = FlutterMethodChannel(name: "platform", binaryMessenger: registrar.messenger())
     let instance = SwiftLearnflutterPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
