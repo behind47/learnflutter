@@ -7,7 +7,7 @@ import 'learnflutter_platform_interface.dart';
 class MethodChannelLearnflutter extends LearnflutterPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
-  final methodChannel = const MethodChannel('learnflutter');
+  final methodChannel = const MethodChannel('platform');
 
   @override
   Future<String?> getPlatformVersion() async {
