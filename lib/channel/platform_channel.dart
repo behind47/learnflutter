@@ -3,12 +3,12 @@ import 'dart:ffi';
 import 'package:flutter/services.dart';
 
 class PlatformChannel {
-  static final String platformChannelName = 'platform';
+  static final String platformChannelName = 'bridge';
   late MethodChannel _platform;
 
   // factory PlatformChannel(String name) => PlatformChannel._internal(name);
 
-  static PlatformChannel _instance = PlatformChannel().._platform = MethodChannel('platform');
+  static PlatformChannel _instance = PlatformChannel().._platform = MethodChannel('bridge');
 
   static PlatformChannel get instance => _instance;
 

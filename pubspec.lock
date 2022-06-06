@@ -15,6 +15,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  bridge:
+    dependency: "direct dev"
+    description:
+      path: "/Users/behind47/bridge"
+      relative: false
+    source: path
+    version: "0.0.1"
   characters:
     dependency: transitive
     description:
@@ -192,5 +199,5 @@ packages:
     source: hosted
     version: "5.3.1"
 sdks:
-  dart: ">=2.17.0-0 <3.0.0"
-  flutter: ">=2.4.0-0.0.pre"
+  dart: ">=2.17.0 <3.0.0"
+  flutter: ">=2.5.0"

@@ -36,6 +36,10 @@ dev_dependencies:
 
   flutter_svg: ^1.0.0
 
+  bridge:
+    path: ../bridge
+    version: 0.0.1
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -66,6 +70,8 @@ flutter:
   #       pluginClass: LearnflutterPlugin
 
   module:
+    androidX: true
+    androidPackage: com.behind47.learnflutter
     iosBundleIdentifier: com.behind47.learnflutter
 
   # To add assets to your application, add an assets section, like this:
