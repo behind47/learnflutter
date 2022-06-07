@@ -13,6 +13,7 @@ class NativeAddPageState extends State<NativeAddPage> {
   String _platformVersion = 'Unknown';
   late final DynamicLibrary nativeAddLib;
   late final int Function(int x, int y) nativeAdd;
+  late final int Function() getTag;
   String _batteryLevel = '';
 
   @override
@@ -21,6 +22,9 @@ class NativeAddPageState extends State<NativeAddPage> {
     nativeAddLib = DynamicLibrary.process();
     nativeAdd = nativeAddLib
         .lookup<NativeFunction<Int32 Function(Int32, Int32)>>('native_add')
+        .asFunction();
+    getTag = nativeAddLib
+        .lookup<NativeFunction<Int32 Function()>>('native_getTag')
         .asFunction();
     initPlatformState();
   }
@@ -31,17 +35,17 @@ class NativeAddPageState extends State<NativeAddPage> {
     // Platform messages may fail, so we use a try/catch PlatformException.
     // We also handle the message potentially returning null.
     try {
-      var platformChannel1 = PlatformChannel(PlatformChannel.platformChannelName);
-      print('platformChannel1 : ${platformChannel1.hashCode}');
-      platformVersion = await platformChannel1.getPlatformVersion() ??
+      // var platformChannel1 =PlatformChannel(PlatformChannel.platformChannelName);
+      // print('platformChannel1 : ${platformChannel1.hashCode}');
+      platformVersion = await PlatformChannel.instance.getPlatformVersion() ??
           'Unknown platform version';
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
 
-    var platformChannel2 = PlatformChannel(PlatformChannel.platformChannelName);
-    String batteryLevel = await platformChannel2.getBatteryLevel();
-    print('platformChannel2 : ${platformChannel2.hashCode}');
+    // var platformChannel2 = PlatformChannel(PlatformChannel.platformChannelName);
+    // print('platformChannel2 : ${platformChannel2.hashCode}');
+    String batteryLevel = await PlatformChannel.instance.getBatteryLevel();
 
     // If the widget was removed from the tree while the asynchronous platform
     // message was in flight, we want to discard the reply rather than calling
@@ -66,6 +70,7 @@ class NativeAddPageState extends State<NativeAddPage> {
             Text('Running on: $_platformVersion\n'),
             Text('1+1=${nativeAdd(1, 1)}'),
             Text('device batteryLevel: $_batteryLevel'),
+            Text('native tag : ${getTag()}'),
           ],
         ),
       ),
