@@ -11,23 +11,23 @@ class NativeAddPage extends StatefulWidget {
 
 class NativeAddPageState extends State<NativeAddPage> {
   String _platformVersion = 'Unknown';
-  late final DynamicLibrary nativeAddLib;
-  late final int Function(int x, int y) nativeAdd;
-  late final int Function() getTag;
+  // late final DynamicLibrary nativeAddLib;
+  // late final int Function(int x, int y) nativeAdd;
+  // late final int Function() getTag;
   String _batteryLevel = '';
 
   @override
   void initState() {
     super.initState();
-    nativeAddLib = DynamicLibrary.process();
+    // nativeAddLib = DynamicLibrary.process();
     // nativeAdd = nativeAddLib
     //     .lookup<NativeFunction<Int32 Function(Int32, Int32)>>('native_add')
     //     .asFunction();
-    nativeAdd = nativeAddLib.lookupFunction<Int32 Function(Int32, Int32), int Function(int, int)>('native_add');
+    // nativeAdd = nativeAddLib.lookupFunction<Int32 Function(Int32, Int32), int Function(int, int)>('native_add');
     
-    getTag = nativeAddLib
-        .lookup<NativeFunction<Int32 Function()>>('native_getTag')
-        .asFunction();
+    // getTag = nativeAddLib
+    //     .lookup<NativeFunction<Int32 Function()>>('native_getTag')
+    //     .asFunction();
     initPlatformState();
   }
 
@@ -70,9 +70,9 @@ class NativeAddPageState extends State<NativeAddPage> {
         body: Column(
           children: [
             Text('Running on: $_platformVersion\n'),
-            Text('1+1=${nativeAdd(1, 1)}'),
-            Text('device batteryLevel: $_batteryLevel'),
-            Text('native tag : ${getTag()}'),
+            // Text('1+1=${nativeAdd(1, 1)}'),
+            // Text('device batteryLevel: $_batteryLevel'),
+            // Text('native tag : ${getTag()}'),
             TextButton(
                 onPressed: () {
                   // var platformChannel3 =PlatformChannel(PlatformChannel.platformChannelName);
