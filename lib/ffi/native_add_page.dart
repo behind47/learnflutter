@@ -20,9 +20,11 @@ class NativeAddPageState extends State<NativeAddPage> {
   void initState() {
     super.initState();
     nativeAddLib = DynamicLibrary.process();
-    nativeAdd = nativeAddLib
-        .lookup<NativeFunction<Int32 Function(Int32, Int32)>>('native_add')
-        .asFunction();
+    // nativeAdd = nativeAddLib
+    //     .lookup<NativeFunction<Int32 Function(Int32, Int32)>>('native_add')
+    //     .asFunction();
+    nativeAdd = nativeAddLib.lookupFunction<Int32 Function(Int32, Int32), int Function(int, int)>('native_add');
+    
     getTag = nativeAddLib
         .lookup<NativeFunction<Int32 Function()>>('native_getTag')
         .asFunction();
@@ -71,6 +73,13 @@ class NativeAddPageState extends State<NativeAddPage> {
             Text('1+1=${nativeAdd(1, 1)}'),
             Text('device batteryLevel: $_batteryLevel'),
             Text('native tag : ${getTag()}'),
+            TextButton(
+                onPressed: () {
+                  // var platformChannel3 =PlatformChannel(PlatformChannel.platformChannelName);
+                  // print('platformChannel3 : ${platformChannel3.hashCode}');
+                  PlatformChannel.instance.test();
+                },
+                child: Text('click to test')),
           ],
         ),
       ),

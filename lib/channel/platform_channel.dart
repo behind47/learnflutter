@@ -1,15 +1,18 @@
-import 'package:flutter/material.dart';
+import 'dart:ffi';
+
 import 'package:flutter/services.dart';
-import 'package:learnflutter/channel/learnflutter_method_channel.dart';
-import 'package:learnflutter/channel/learnflutter_platform_interface.dart';
 
 class PlatformChannel {
   static final String platformChannelName = 'platform';
-  MethodChannel _platform;
+  late MethodChannel _platform;
 
-  factory PlatformChannel(String name) => PlatformChannel._internal(name);
+  // factory PlatformChannel(String name) => PlatformChannel._internal(name);
 
-  PlatformChannel._internal(String name) : _platform = MethodChannel(name);
+  static PlatformChannel _instance = PlatformChannel().._platform = MethodChannel('platform');
+
+  static PlatformChannel get instance => _instance;
+
+  // PlatformChannel._internal(String name) : _platform = MethodChannel(name);
 
   Future<String> getBatteryLevel() async {
     String batteryLevel;
@@ -23,6 +26,10 @@ class PlatformChannel {
   }
 
   Future<String?> getPlatformVersion() {
-    return LearnflutterPlatform.instance.getPlatformVersion();
+    return _platform.invokeMethod('getPlatformVersion');
+  }
+
+  Future<Void> test() async {
+    return await _platform.invokeMethod('test');
   }
 }
