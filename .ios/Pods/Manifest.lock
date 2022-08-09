@@ -1,0 +1,29 @@
+PODS:
+  - bridge (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - bridge
+    - Flutter
+
+DEPENDENCIES:
+  - bridge (from `.symlinks/plugins/bridge/ios`)
+  - Flutter (from `Flutter`)
+  - FlutterPluginRegistrant (from `Flutter/FlutterPluginRegistrant`)
+
+EXTERNAL SOURCES:
+  bridge:
+    :path: ".symlinks/plugins/bridge/ios"
+  Flutter:
+    :path: Flutter
+  FlutterPluginRegistrant:
+    :path: Flutter/FlutterPluginRegistrant
+
+SPEC CHECKSUMS:
+  bridge: 19e67a95fbc57851d07b6d3ca114a09188599452
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  FlutterPluginRegistrant: 86e9ed3702fb562c94a2bbb541c4fded61f946ba
+
+PODFILE CHECKSUM: 1a4a4c8498055b871db01a7bd3b4da2fdfe228a2
+
+COCOAPODS: 1.11.3
