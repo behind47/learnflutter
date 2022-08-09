@@ -5,6 +5,7 @@ import 'package:learnflutter/MyTabbarView.dart';
 import 'package:learnflutter/ffi/native_add_page.dart';
 import 'package:learnflutter/introducation/IntroducationPage.dart';
 import 'package:learnflutter/paint/paint_page.dart';
+import 'package:learnflutter/widget/LayoutPage.dart';
 import 'package:learnflutter/widget/my_farctionally_sized_box.dart';
 import 'package:learnflutter/widget/my_nested_list.dart';
 import 'package:learnflutter/widget/my_rich_text_page.dart';
@@ -33,6 +34,7 @@ class EntryListState extends State<EntryList> {
           children: <Widget>[
             buildItem("MyApp", MyApp()),
             buildItem('简历模版', IntroducationPage()),
+            buildItem('布局约束实践', LayoutPage()),
             buildItem("MyTabBarView", MyTabBarView()),
             buildItem("MyCusScrollView", MyCusScrollView()),
             buildItem("Container", MyContainer()),
