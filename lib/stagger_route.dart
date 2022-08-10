@@ -1,7 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'StaggerAnimation.dart';
+import 'stagger_animation.dart';
 
 class StaggerRoute extends StatefulWidget {
   @override

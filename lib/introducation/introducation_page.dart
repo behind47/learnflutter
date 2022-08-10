@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnflutter/util/widget_operation_end.dart';
 
 class IntroducationPage extends StatefulWidget {
   @override
@@ -148,17 +149,3 @@ class BedEducationVM extends BedBaseViewModel {
 
 /// 工作经验：时间、公司、职位、工作内容
 class BedJobVM extends BedBaseViewModel {}
-
-extension WidgetOperationBack on Widget {
-  Widget withExpaned() {
-    return Expanded(child: this);
-  }
-
-  Widget withFlexible(int flex) {
-    return Flexible(child: this, flex: flex);
-  }
-
-  Widget withPadding(EdgeInsets insets) {
-    return Padding(padding: insets, child: this);
-  }
-}

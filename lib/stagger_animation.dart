@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class StaggerAnimation extends StatelessWidget {
@@ -45,9 +44,9 @@ class StaggerAnimation extends StatelessWidget {
   }
 
   final Animation<double> controller;
-  late Animation<double> height;
-  late Animation<EdgeInsets> padding;
-  late Animation<Color?> color;
+  late final Animation<double> height;
+  late final Animation<EdgeInsets> padding;
+  late final Animation<Color?> color;
 
   Widget _buildAnimation(BuildContext context, Widget? child) {
     return Container(

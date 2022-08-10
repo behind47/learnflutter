@@ -1,11 +1,12 @@
-import 'package:learnflutter/MyApp.dart';
-import 'package:learnflutter/MyContainer.dart';
-import 'package:learnflutter/MyCusScrollView.dart';
-import 'package:learnflutter/MyTabbarView.dart';
+import 'package:learnflutter/my_app.dart';
+import 'package:learnflutter/my_container.dart';
+import 'package:learnflutter/my_custom_scroll_view.dart';
+import 'package:learnflutter/my_tabbar_view.dart';
 import 'package:learnflutter/ffi/native_add_page.dart';
-import 'package:learnflutter/introducation/IntroducationPage.dart';
+import 'package:learnflutter/introducation/introducation_page.dart';
 import 'package:learnflutter/paint/paint_page.dart';
-import 'package:learnflutter/widget/LayoutPage.dart';
+import 'package:learnflutter/util/router_utils.dart';
+import 'package:learnflutter/widget/single_layout_page.dart';
 import 'package:learnflutter/widget/my_farctionally_sized_box.dart';
 import 'package:learnflutter/widget/my_nested_list.dart';
 import 'package:learnflutter/widget/my_rich_text_page.dart';
@@ -32,37 +33,24 @@ class EntryListState extends State<EntryList> {
             child: ListView(
           padding: const EdgeInsets.all(8),
           children: <Widget>[
-            buildItem("MyApp", MyApp()),
-            buildItem('简历模版', IntroducationPage()),
-            buildItem('布局约束实践', LayoutPage()),
-            buildItem("MyTabBarView", MyTabBarView()),
-            buildItem("MyCusScrollView", MyCusScrollView()),
-            buildItem("Container", MyContainer()),
-            buildItem('Expanded', MyExpanded()),
-            buildItem('MyFractionallySizedBox', MyFractionallySizedBox()),
-            buildItem('MyNestedList', MyNestedList()),
-            buildItem('富文本', MyRichTextPage()),
-            buildItem('截图', MyCapturePage()),
-            buildItem('绘制', PaintPage()),
-            buildItem('FFI', NativeAddPage()),
+            buildItem(context, "MyApp", MyApp()),
+            buildItem(context, '简历模版', IntroducationPage()),
+            buildItem(context, '布局约束实践', SingleLayoutPage()),
+            buildItem(context, "MyTabBarView", MyTabBarView()),
+            buildItem(context, "MyCusScrollView", MyCusScrollView()),
+            buildItem(context, "Container", MyContainer()),
+            buildItem(context, 'Expanded', MyExpanded()),
+            buildItem(context, 'MyFractionallySizedBox', MyFractionallySizedBox()),
+            buildItem(context, 'MyNestedList', MyNestedList()),
+            buildItem(context, '富文本', MyRichTextPage()),
+            buildItem(context, '截图', MyCapturePage()),
+            buildItem(context, '绘制', PaintPage()),
+            buildItem(context, 'FFI', NativeAddPage()),
           ],
         ))
       ],
     );
   }
-
-  /// @param page 需要传入StatelessWidget或StatefulWidget的子集
-  Container buildItem(String? title, Widget page) => Container(
-        height: 50,
-        color: Colors.blue,
-        child: GestureDetector(
-          child: Center(
-            child: Text(title ?? ""),
-          ),
-          onTap: () => Navigator.push(
-              context, MaterialPageRoute(builder: (context) => page)),
-        ),
-      );
 }
 
 class MyExpanded extends StatelessWidget {

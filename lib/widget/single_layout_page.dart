@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 /// 代码来自《Flutter开发之旅从南到北》——杨加康
-class LayoutPage extends StatefulWidget {
+class SingleLayoutPage extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => LayoutPageState();
+  State<StatefulWidget> createState() => SingleLayoutPageState();
 }
 
 /// 布局流程：
@@ -13,7 +13,7 @@ class LayoutPage extends StatefulWidget {
 /// 3. CustomCenter的子组件是Container，设置了width，会从CustomCenter传来的constraints里寻找最接近width的值作为constraints.minWidth与constraints.maxWidth，height同理。
 /// 于是子组件的constraints = {minWidth:100,maxWidth:100,minHeight:100,maxHeight:100}。
 /// 至此CustomCenter与子组件CustomCenter的尺寸都确定了，于是可以确定子组件Container在CustomCenter中的坐标。
-class LayoutPageState extends State<LayoutPage> {
+class SingleLayoutPageState extends State<SingleLayoutPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
