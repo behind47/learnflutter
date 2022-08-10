@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:learnflutter/util/routerUtils.dart';
-import 'package:learnflutter/widget/MultipleLayoutPage.dart';
-import 'package:learnflutter/widget/SingleLayoutPage.dart';
+import 'package:learnflutter/util/router_utils.dart';
+import 'package:learnflutter/widget/multiple_layout_page.dart';
+import 'package:learnflutter/widget/single_layout_page.dart';
 
 class LayoutPage extends StatefulWidget {
   @override
@@ -11,11 +11,14 @@ class LayoutPage extends StatefulWidget {
 class LayoutPageState extends State<LayoutPage> {
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        buildItem(context, '单子组件布局', SingleLayoutPage()),
-        buildItem(context, '多子组件布局', MultipleLayoutPage()),
-      ],
+    return Scaffold(
+      appBar: AppBar(title: Text('布局过渡页')),
+      body: ListView(
+        children: [
+          buildItem(context, '单子组件布局', SingleLayoutPage()),
+          buildItem(context, '多子组件布局', MultipleLayoutPage()),
+        ],
+      ),
     );
   }
 }

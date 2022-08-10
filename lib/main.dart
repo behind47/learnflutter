@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:learnflutter/EntryList.dart';
+import 'package:learnflutter/entry_list.dart';
 
 // void main() {
 //   debugRepaintRainbowEnabled = true;
