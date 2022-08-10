@@ -19,236 +19,286 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		025FC20AAED0F0D0F3DD761E7958975E /* FlutterPluginRegistrant-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05874B7F0AA3DEC5D8FD65B9E62D2C61 /* FlutterPluginRegistrant-dummy.m */; };
-		0F88B3ED41F7DDAE03544D32802EDFAD /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE23E03046B20786A17C350E6DF8485 /* Constants.m */; };
-		1D709E2F818FAE9816485837F4957258 /* FlutterPluginRegistrant-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C36326CB34C1D8DA7F60F25E809C89 /* FlutterPluginRegistrant-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20BAF250000BA105005ADD15C68E2224 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B26C2C5D96E8D1A05064BA63624D30 /* Constants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		299C41C24B8912C5CB7F5E70BEDC7096 /* SwiftBridgePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A31017CD93D0D8552F13A892A81A15 /* SwiftBridgePlugin.swift */; };
-		3A4F8BB01DB4F6D8F266DF010883064A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		58FC4264662DE9553FF8E3F7B5ED4471 /* Pods-Runner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3C932BD54DBB963102A89E0F9E3948 /* Pods-Runner-dummy.m */; };
-		6C781325B1C97736704C76EA5E984FEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		7989FFFAD7B9B81589BB3346399390FF /* BridgePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = AD46C11DAEDC02B45C26EA1188CDAAE3 /* BridgePlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7AD950AA64CC9D70EAFFD8295DBCD0E3 /* BridgePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F185C3F6D7FD46F5A0B15C947E3ABC5 /* BridgePlugin.m */; };
-		7BFA7A5D0813D289AD1A2E202814B041 /* GeneratedPluginRegistrant.h in Headers */ = {isa = PBXBuildFile; fileRef = 2764E31028F29CB2C232174EB9F9B182 /* GeneratedPluginRegistrant.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A919792335EBEFC08912173424D32323 /* Pods-Runner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF45FBE2BC9AD7B2D7E56D01B5EE46 /* Pods-Runner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA8570FC9F4FB75279A38E4574E4D3DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		B875984D065103E2DE2D2CBF62B9B02D /* bridge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC272AF2F73998DDBC6C2D5629F98D5D /* bridge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D51F82523CF8FDC716C2EAA2DBE3CF66 /* bridge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C64477B2943FE6FE565D1C7843652E /* bridge-dummy.m */; };
-		DB34EFDE058320F09452D891609E4901 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DD4D80A613855B0C2B247962BDAADC /* GeneratedPluginRegistrant.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		10B0BE9EB47851BCA67586D764E5AA93 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0831AECBE555A09C2E8380B303859D66 /* GeneratedPluginRegistrant.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		19E343462AF70ACD1065686462310C28 /* messages.g.h in Headers */ = {isa = PBXBuildFile; fileRef = 6087E6F89B0E3DCF8131038C2F0837A9 /* messages.g.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E355118D5C46D04B475779F5F6E6164 /* FlutterPluginRegistrant-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C03FA4934459329029039C71F326D6B /* FlutterPluginRegistrant-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		233BC13C4EBB02568B0837C7B7ED7B93 /* Pods-Runner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF45FBE2BC9AD7B2D7E56D01B5EE46 /* Pods-Runner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28D5859D4685A7C7084E29F728BBED77 /* bridge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E89B90B10A80D3DE2C724A261B24172 /* bridge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FEF955572D063C20E1234BB037F3B46 /* bridge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA9165F08012CB7524ADFB6E5048B5 /* bridge-dummy.m */; };
+		3AB50F1C1FA123A1894D879DB95B3889 /* messages.g.m in Sources */ = {isa = PBXBuildFile; fileRef = C954FEE37656B0E82B90DE060489DE82 /* messages.g.m */; };
+		4500D7BA07D20C60604AE5429E325D27 /* Pods-Runner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3C932BD54DBB963102A89E0F9E3948 /* Pods-Runner-dummy.m */; };
+		526363C61772F5E85358932E794C7C07 /* BridgePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = AEDA05A6B1898CF66EDAEE15C4B15CA2 /* BridgePlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C0A4441EB2BBB5CE213D1EDD89BF31F /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7FDDBE5C8148A5D10D971A3B77F844 /* Constants.m */; };
+		5EF2CDEC2328855AFE423479588991A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		68E62CE91E4F3B493B07517180791A06 /* FlutterPluginRegistrant-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E69D3F1558A66A059CD7A5424FE750 /* FlutterPluginRegistrant-dummy.m */; };
+		6B049F4EE938D75CE1086AB1E2B9B199 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = E52DD2CB7C2DBE9A020C6364650F15F2 /* Constants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82C485CF6940311BF0D8E0574322673B /* FLTPathProviderPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 6130D8EF6163CB7220F6D1A904B95C3D /* FLTPathProviderPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B02F4C513B3FEF5E9189DA130BB2E30B /* path_provider_ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D4A8FAA9CBF8E5A5003D9D7898F78A /* path_provider_ios-dummy.m */; };
+		B39C2B53729DD9B50269CD191FCFCAD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CF9AAD5CB53F851F2A441874F7B5C919 /* path_provider_ios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AEE5B835C0E84D9D23F74A4B71D3590 /* path_provider_ios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D401ED753D68F3A8A6651D251192395C /* BridgePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = EC628E0E2753E7010B012091067D2D58 /* BridgePlugin.m */; };
+		DBD17DC696B9B298CDFA0573C7200750 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DF5700BCE5590C0F6E7947E05C1152BF /* FLTPathProviderPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A90857222245FA2744021D19091515FB /* FLTPathProviderPlugin.m */; };
+		EA84C10A67D07FB7AC314B2FBC981293 /* SwiftBridgePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A7625972982A010F09342A7F861EB /* SwiftBridgePlugin.swift */; };
+		F0AE63E9B1AA4FD409F31F6DF526F5C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FB095F0F2E944EEBEBA3F95CA4606785 /* GeneratedPluginRegistrant.h in Headers */ = {isa = PBXBuildFile; fileRef = 41237A633D4E1982EDBA9336586BD523 /* GeneratedPluginRegistrant.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4592F9A02DE87C88AFDC1AFEE91CE59E /* PBXContainerItemProxy */ = {
+		3CFFEB02DE0E61A918331C4FB23F6523 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
 			remoteInfo = Flutter;
 		};
-		4BF09CE4FE20887502C0FA79D60CA184 /* PBXContainerItemProxy */ = {
+		67C55645ED5241C6FF10377822B10AB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F87638CDABF68BA05567B371A176C3A;
+			remoteInfo = path_provider_ios;
+		};
+		7B9D99A24618F09326A0631E2D99CC89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDD06FEA207CFA8697C4BDF99DF665B7;
+			remoteInfo = bridge;
+		};
+		90A264FF3E35FC568FBE390C06098CFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F87638CDABF68BA05567B371A176C3A;
+			remoteInfo = path_provider_ios;
+		};
+		B3E9D0FB4043539C771F74FA5043303E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
 			remoteInfo = Flutter;
 		};
-		809D0FE7A75607D1F2F30E215CC4C12D /* PBXContainerItemProxy */ = {
+		BF344D8D6FEAB36FFD5A2AFC94BA9269 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
-			remoteInfo = Flutter;
+			remoteGlobalIDString = DDD06FEA207CFA8697C4BDF99DF665B7;
+			remoteInfo = bridge;
 		};
-		AD075E0A3363FA15C5CEA06DE6416AC4 /* PBXContainerItemProxy */ = {
+		C19AB2F948C713D06D9721298D109C7F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 83DAA8F43D74F8D51203DE23C7C3A3F5;
 			remoteInfo = FlutterPluginRegistrant;
 		};
-		B1C00928C6220E434DBC8A9669F10E82 /* PBXContainerItemProxy */ = {
+		D4A3669C05DD8C06FC7C00F1CB40E28F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DDD06FEA207CFA8697C4BDF99DF665B7;
-			remoteInfo = bridge;
+			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
+			remoteInfo = Flutter;
 		};
-		FE008853733572201411F40A6A116438 /* PBXContainerItemProxy */ = {
+		D50773C454D623C2D3A4C38F228D9377 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DDD06FEA207CFA8697C4BDF99DF665B7;
-			remoteInfo = bridge;
+			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
+			remoteInfo = Flutter;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05874B7F0AA3DEC5D8FD65B9E62D2C61 /* FlutterPluginRegistrant-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlutterPluginRegistrant-dummy.m"; sourceTree = "<group>"; };
-		0DE23E03046B20786A17C350E6DF8485 /* Constants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = ../../../../../../../bridge/ios/Classes/Constants.m; sourceTree = "<group>"; };
-		0F185C3F6D7FD46F5A0B15C947E3ABC5 /* BridgePlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BridgePlugin.m; path = ../../../../../../../bridge/ios/Classes/BridgePlugin.m; sourceTree = "<group>"; };
-		231D86DE09F4740A31A4DF605DE76036 /* FlutterPluginRegistrant-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlutterPluginRegistrant-prefix.pch"; sourceTree = "<group>"; };
-		24B26C2C5D96E8D1A05064BA63624D30 /* Constants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../../../../../../../bridge/ios/Classes/Constants.h; sourceTree = "<group>"; };
-		2764E31028F29CB2C232174EB9F9B182 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeneratedPluginRegistrant.h; path = Classes/GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
-		28EB4B41E52D1DFA0E46A7348A92EB31 /* Flutter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.release.xcconfig; sourceTree = "<group>"; };
+		046A7625972982A010F09342A7F861EB /* SwiftBridgePlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftBridgePlugin.swift; path = ../../../../../../../bridge/ios/Classes/SwiftBridgePlugin.swift; sourceTree = "<group>"; };
+		0831AECBE555A09C2E8380B303859D66 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GeneratedPluginRegistrant.m; path = Classes/GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		2400D0E9A7CF66A75CFFE6501C0DCDFD /* Flutter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.debug.xcconfig; sourceTree = "<group>"; };
+		2616F94F9B5137DACB8A5C755DC14F92 /* FlutterPluginRegistrant-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlutterPluginRegistrant-Info.plist"; sourceTree = "<group>"; };
+		276A557C80C3F2834B108B755BF30234 /* path_provider_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = path_provider_ios.debug.xcconfig; sourceTree = "<group>"; };
+		2AEE5B835C0E84D9D23F74A4B71D3590 /* path_provider_ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "path_provider_ios-umbrella.h"; sourceTree = "<group>"; };
+		2B7FDDBE5C8148A5D10D971A3B77F844 /* Constants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = ../../../../../../../bridge/ios/Classes/Constants.m; sourceTree = "<group>"; };
 		317C26B9A7CEDD34ADE8F37FAAB7AC20 /* Pods-Runner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Runner-frameworks.sh"; sourceTree = "<group>"; };
-		353953233AA19DACF7CDD3F1F6E8672A /* FlutterPluginRegistrant-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlutterPluginRegistrant-Info.plist"; sourceTree = "<group>"; };
-		3D176F127DE77D19ED01193C8BBE5852 /* FlutterPluginRegistrant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlutterPluginRegistrant.release.xcconfig; sourceTree = "<group>"; };
+		34E69D3F1558A66A059CD7A5424FE750 /* FlutterPluginRegistrant-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlutterPluginRegistrant-dummy.m"; sourceTree = "<group>"; };
+		35F28AFDC83BB0981D7EA80231F1FE94 /* bridge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = bridge.modulemap; sourceTree = "<group>"; };
+		365B77F490B336CCE66AB315C6F1BBDA /* Flutter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Flutter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		38494C21A5B40F4690BFCC9A55EC958E /* bridge-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "bridge-Info.plist"; sourceTree = "<group>"; };
+		3C04D5DE29DC62F30BD26CABA9D65826 /* bridge.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = bridge.podspec; path = ../../../../../../bridge/ios/bridge.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3C1B18B4580BC20CE03F0AEFCED5AA39 /* bridge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "bridge-prefix.pch"; sourceTree = "<group>"; };
+		3CAA9165F08012CB7524ADFB6E5048B5 /* bridge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "bridge-dummy.m"; sourceTree = "<group>"; };
+		3E89B90B10A80D3DE2C724A261B24172 /* bridge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "bridge-umbrella.h"; sourceTree = "<group>"; };
+		41237A633D4E1982EDBA9336586BD523 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeneratedPluginRegistrant.h; path = Classes/GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		415FFC30397755D60A2DF51D9C47C935 /* bridge */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = bridge; path = bridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		490541CE5C29CBD6E509EE0E07176A9B /* Flutter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.release.xcconfig; sourceTree = "<group>"; };
+		4B3C4F3AB950F733675F584B3738FE1D /* path_provider_ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = path_provider_ios.modulemap; sourceTree = "<group>"; };
 		51825CD8F0558EFA53D9510F0E5BFA16 /* Pods-Runner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Runner-Info.plist"; sourceTree = "<group>"; };
-		51AA3A763836830ED21BF0DF3A961483 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../../../../../../bridge/LICENSE; sourceTree = "<group>"; };
+		6087E6F89B0E3DCF8131038C2F0837A9 /* messages.g.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = messages.g.h; path = "../../../../../../../.pub-cache/hosted/pub.dartlang.org/path_provider_ios-2.0.11/ios/Classes/messages.g.h"; sourceTree = "<group>"; };
+		6130D8EF6163CB7220F6D1A904B95C3D /* FLTPathProviderPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTPathProviderPlugin.h; path = "../../../../../../../.pub-cache/hosted/pub.dartlang.org/path_provider_ios-2.0.11/ios/Classes/FLTPathProviderPlugin.h"; sourceTree = "<group>"; };
 		669E8F25E1897672BDB80B7EB784DA24 /* Pods-Runner */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Runner"; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CEE0A1D9B890C8238C9A72713C05325 /* FlutterPluginRegistrant.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FlutterPluginRegistrant.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6E14B97A3D868E2CAC2E0B5DD7158691 /* bridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = bridge.debug.xcconfig; sourceTree = "<group>"; };
-		705F9B755E3CD5A163F0D3DCD83B76B8 /* bridge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = bridge.modulemap; sourceTree = "<group>"; };
+		67626F2721D7FCEF52306BDF660D0C75 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../../../../../../bridge/LICENSE; sourceTree = "<group>"; };
+		68FA455CDAA6AAA550E1088B28A3B069 /* FlutterPluginRegistrant.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlutterPluginRegistrant.modulemap; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7414BDF7B6293872D0324B16FC6858C2 /* bridge.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = bridge.podspec; path = ../../../../../../bridge/ios/bridge.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		74F798CF285E2FF0E8A54268A84F1698 /* FlutterPluginRegistrant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlutterPluginRegistrant.debug.xcconfig; sourceTree = "<group>"; };
-		77823A43B8FA1F24EB0AE5B196314165 /* bridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = bridge.release.xcconfig; sourceTree = "<group>"; };
+		7567F8B2D1A21D3CC0A25D01D7C1AF4D /* bridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = bridge.debug.xcconfig; sourceTree = "<group>"; };
 		7B3C932BD54DBB963102A89E0F9E3948 /* Pods-Runner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Runner-dummy.m"; sourceTree = "<group>"; };
-		85C64477B2943FE6FE565D1C7843652E /* bridge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "bridge-dummy.m"; sourceTree = "<group>"; };
-		910D43ACB830F880B26B35BAB86BAE7A /* Flutter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Flutter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		92C36326CB34C1D8DA7F60F25E809C89 /* FlutterPluginRegistrant-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlutterPluginRegistrant-umbrella.h"; sourceTree = "<group>"; };
-		94D2EB135EB8A0EF02C527789E81DEFD /* bridge-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "bridge-Info.plist"; sourceTree = "<group>"; };
+		7C03FA4934459329029039C71F326D6B /* FlutterPluginRegistrant-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlutterPluginRegistrant-umbrella.h"; sourceTree = "<group>"; };
+		8205195DC533BA1AA8C9F7324598B0E0 /* path_provider_ios-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "path_provider_ios-prefix.pch"; sourceTree = "<group>"; };
+		8DE6CA193A88008577C1EB8D96D13B87 /* path_provider_ios-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "path_provider_ios-Info.plist"; sourceTree = "<group>"; };
+		9368B6F7C05AE9FAB2C41D60288BDE66 /* FlutterPluginRegistrant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlutterPluginRegistrant.release.xcconfig; sourceTree = "<group>"; };
 		96BF45FBE2BC9AD7B2D7E56D01B5EE46 /* Pods-Runner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Runner-umbrella.h"; sourceTree = "<group>"; };
+		9A96417B94D69229FC81FB730C40ADBC /* FlutterPluginRegistrant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlutterPluginRegistrant.debug.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F79F8269DC34AC56BB3D1D9652C0D86 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
-		AC272AF2F73998DDBC6C2D5629F98D5D /* bridge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "bridge-umbrella.h"; sourceTree = "<group>"; };
-		AD46C11DAEDC02B45C26EA1188CDAAE3 /* BridgePlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BridgePlugin.h; path = ../../../../../../../bridge/ios/Classes/BridgePlugin.h; sourceTree = "<group>"; };
-		AF360B5349BACFBE43CA8B8F834C162B /* Flutter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.debug.xcconfig; sourceTree = "<group>"; };
+		A36D8791E4EAD8454CD9059BA8D4EB06 /* FlutterPluginRegistrant.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FlutterPluginRegistrant.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A90857222245FA2744021D19091515FB /* FLTPathProviderPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTPathProviderPlugin.m; path = "../../../../../../../.pub-cache/hosted/pub.dartlang.org/path_provider_ios-2.0.11/ios/Classes/FLTPathProviderPlugin.m"; sourceTree = "<group>"; };
+		AD789B37D4421E63A8F75741C721D0DC /* FlutterPluginRegistrant-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlutterPluginRegistrant-prefix.pch"; sourceTree = "<group>"; };
+		AEDA05A6B1898CF66EDAEE15C4B15CA2 /* BridgePlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BridgePlugin.h; path = ../../../../../../../bridge/ios/Classes/BridgePlugin.h; sourceTree = "<group>"; };
+		B3A1AD3B6EA11FAF5F5979FC026804F1 /* bridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = bridge.release.xcconfig; sourceTree = "<group>"; };
+		BD07FAB72B4DA85FCCA886500ADA1EDF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../.pub-cache/hosted/pub.dartlang.org/path_provider_ios-2.0.11/LICENSE"; sourceTree = "<group>"; };
+		BEDB77D7DFDD5C9008E7D3FC4206FEC9 /* path_provider_ios */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = path_provider_ios; path = path_provider_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6EA98402A94995D022D330B64B5203D /* Pods-Runner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Runner-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C8E94271B55A08B77D0BD82F8BA14BA9 /* path_provider_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = path_provider_ios.release.xcconfig; sourceTree = "<group>"; };
+		C954FEE37656B0E82B90DE060489DE82 /* messages.g.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = messages.g.m; path = "../../../../../../../.pub-cache/hosted/pub.dartlang.org/path_provider_ios-2.0.11/ios/Classes/messages.g.m"; sourceTree = "<group>"; };
 		CDAECCF4B5E08124ED410F09FD5A5DF9 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
-		CFF979E275F3B0F55666CE22B5757734 /* bridge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "bridge-prefix.pch"; sourceTree = "<group>"; };
-		D1A31017CD93D0D8552F13A892A81A15 /* SwiftBridgePlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftBridgePlugin.swift; path = ../../../../../../../bridge/ios/Classes/SwiftBridgePlugin.swift; sourceTree = "<group>"; };
 		D2FA70CA298C392CB8332ADEEDD1CE85 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 		D9F2B4CB813B4BDC4D164C6E0868930A /* Pods-Runner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Runner-acknowledgements.plist"; sourceTree = "<group>"; };
 		DF7C6EBB9161EEF650EC12B4BB67E628 /* FlutterPluginRegistrant */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlutterPluginRegistrant; path = FlutterPluginRegistrant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E460D017F162347AC1BF4B86A88D3D8E /* FlutterPluginRegistrant.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlutterPluginRegistrant.modulemap; sourceTree = "<group>"; };
-		E9DD4D80A613855B0C2B247962BDAADC /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GeneratedPluginRegistrant.m; path = Classes/GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		E52DD2CB7C2DBE9A020C6364650F15F2 /* Constants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../../../../../../../bridge/ios/Classes/Constants.h; sourceTree = "<group>"; };
+		E6D4A8FAA9CBF8E5A5003D9D7898F78A /* path_provider_ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "path_provider_ios-dummy.m"; sourceTree = "<group>"; };
+		EC628E0E2753E7010B012091067D2D58 /* BridgePlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BridgePlugin.m; path = ../../../../../../../bridge/ios/Classes/BridgePlugin.m; sourceTree = "<group>"; };
+		F20B51A5ADCF80F656867575C4ACA4BB /* path_provider_ios.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = path_provider_ios.podspec; path = "../../../../../../.pub-cache/hosted/pub.dartlang.org/path_provider_ios-2.0.11/ios/path_provider_ios.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F49C32B3B8CF59AB437BFD7314674868 /* Pods-Runner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Runner.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1F972A5C9C16D6D9A672F2984A90806C /* Frameworks */ = {
+		30A696FF150C8AC983C122DB1A8C04E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA8570FC9F4FB75279A38E4574E4D3DB /* Foundation.framework in Frameworks */,
+				B39C2B53729DD9B50269CD191FCFCAD1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2868D7DBCE32302942C384429EDFA3B6 /* Frameworks */ = {
+		3254A45D326388A8AFB404BCE6E55960 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C781325B1C97736704C76EA5E984FEE /* Foundation.framework in Frameworks */,
+				F0AE63E9B1AA4FD409F31F6DF526F5C0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF9317F7283D41FE9DC09C24D3E9EA4F /* Frameworks */ = {
+		7DC90A7347D2C4FB09BB7ABA52DB5123 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A4F8BB01DB4F6D8F266DF010883064A /* Foundation.framework in Frameworks */,
+				DBD17DC696B9B298CDFA0573C7200750 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7A092BCA7A213290B53632EB3EE7D7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF2CDEC2328855AFE423479588991A2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0653C83AF70A7CD196B683865813E2B2 /* .. */ = {
+		00A1D44C682FC212EE05B8D35EFDA23A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4BC58850D0384473BDB95479BD827F60 /* learnflutter */,
+				2400D0E9A7CF66A75CFFE6501C0DCDFD /* Flutter.debug.xcconfig */,
+				490541CE5C29CBD6E509EE0E07176A9B /* Flutter.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Pods/Target Support Files/Flutter";
+			sourceTree = "<group>";
+		};
+		021B5A6C507593DF93113FC905754362 /* .symlinks */ = {
+			isa = PBXGroup;
+			children = (
+				AC6C8DBCAD0BB3CFC282F1D5C17C6DF9 /* plugins */,
+			);
+			name = .symlinks;
+			path = .symlinks;
+			sourceTree = "<group>";
+		};
+		09C0328066FB1192B5E4B37F8B6FE482 /* learnflutter */ = {
+			isa = PBXGroup;
+			children = (
+				5AC68130BDF84DC2C411A2C1FEDBDE57 /* .ios */,
+			);
+			name = learnflutter;
+			path = learnflutter;
+			sourceTree = "<group>";
+		};
+		0BF9296FFF4FC42F1F5134EFE6823063 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				BD07FAB72B4DA85FCCA886500ADA1EDF /* LICENSE */,
+				F20B51A5ADCF80F656867575C4ACA4BB /* path_provider_ios.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		0FB250B139950FAF57DFE34F7D5B0A8D /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				FAC92A3F3560B5E6BC4347FFB66DA18E /* bridge */,
+			);
+			name = plugins;
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		1C29D08FBEAAF864498882589E8A1C7C /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				9AEEFAAA9EAE556D83F7E22A83F78D49 /* .. */,
 			);
 			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
-		068B4064DF9C6B209439F377C6C1F85D /* ios */ = {
+		20C1B6862990B75F9E6F638D15723051 /* bridge */ = {
 			isa = PBXGroup;
 			children = (
-				114509C7F9FA01CCB9C2514F03A02138 /* Classes */,
+				6683756C0208680C80097BBF3F281C78 /* .. */,
+				FDA956D60F6B1928FD49365E95478AD2 /* Pod */,
+				CCB4F11ECFF51D99B522B4683487CAB3 /* Support Files */,
+			);
+			name = bridge;
+			path = ../.symlinks/plugins/bridge/ios;
+			sourceTree = "<group>";
+		};
+		24BD1DACA851F1013C636BD6F6C48FBB /* FlutterPluginRegistrant */ = {
+			isa = PBXGroup;
+			children = (
+				41237A633D4E1982EDBA9336586BD523 /* GeneratedPluginRegistrant.h */,
+				0831AECBE555A09C2E8380B303859D66 /* GeneratedPluginRegistrant.m */,
+				B96D6B072B62D4DC965ECDD1469A6F6B /* Pod */,
+				C6965E0F83B2EE449F4F8BC9BFFFE72F /* Support Files */,
+			);
+			name = FlutterPluginRegistrant;
+			path = ../Flutter/FlutterPluginRegistrant;
+			sourceTree = "<group>";
+		};
+		4756F98A05BB482BFBE2944CFBD6C2BB /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				E7061A6F5B52B4A88BEF1CF69226BC50 /* Classes */,
 			);
 			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
-		114509C7F9FA01CCB9C2514F03A02138 /* Classes */ = {
+		52E4CA4943CE64B6073CF6D862425491 /* .. */ = {
 			isa = PBXGroup;
 			children = (
-				AD46C11DAEDC02B45C26EA1188CDAAE3 /* BridgePlugin.h */,
-				0F185C3F6D7FD46F5A0B15C947E3ABC5 /* BridgePlugin.m */,
-				24B26C2C5D96E8D1A05064BA63624D30 /* Constants.h */,
-				0DE23E03046B20786A17C350E6DF8485 /* Constants.m */,
-				D1A31017CD93D0D8552F13A892A81A15 /* SwiftBridgePlugin.swift */,
+				BB3D4D2E0A8F4600CF29F9001834B936 /* .. */,
 			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		13DD55EE9AE70299ADC06B3DD71D5EFF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E460D017F162347AC1BF4B86A88D3D8E /* FlutterPluginRegistrant.modulemap */,
-				05874B7F0AA3DEC5D8FD65B9E62D2C61 /* FlutterPluginRegistrant-dummy.m */,
-				353953233AA19DACF7CDD3F1F6E8672A /* FlutterPluginRegistrant-Info.plist */,
-				231D86DE09F4740A31A4DF605DE76036 /* FlutterPluginRegistrant-prefix.pch */,
-				92C36326CB34C1D8DA7F60F25E809C89 /* FlutterPluginRegistrant-umbrella.h */,
-				74F798CF285E2FF0E8A54268A84F1698 /* FlutterPluginRegistrant.debug.xcconfig */,
-				3D176F127DE77D19ED01193C8BBE5852 /* FlutterPluginRegistrant.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../../Pods/Target Support Files/FlutterPluginRegistrant";
-			sourceTree = "<group>";
-		};
-		18B7DD82BF5A5763FC5F2B13AF189EC3 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				910D43ACB830F880B26B35BAB86BAE7A /* Flutter.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		1C6C8C17EBD8FB8E00A926FC8943CB91 /* .ios */ = {
-			isa = PBXGroup;
-			children = (
-				F1C5BADA1669D6B6FD9F79D15B02F42C /* .symlinks */,
-			);
-			name = .ios;
-			path = .ios;
-			sourceTree = "<group>";
-		};
-		3015EF656F3F22D17B31929E4D20AB19 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				7414BDF7B6293872D0324B16FC6858C2 /* bridge.podspec */,
-				51AA3A763836830ED21BF0DF3A961483 /* LICENSE */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		3123F3EA56E1028831CF4DE0DB78DB8D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				705F9B755E3CD5A163F0D3DCD83B76B8 /* bridge.modulemap */,
-				85C64477B2943FE6FE565D1C7843652E /* bridge-dummy.m */,
-				94D2EB135EB8A0EF02C527789E81DEFD /* bridge-Info.plist */,
-				CFF979E275F3B0F55666CE22B5757734 /* bridge-prefix.pch */,
-				AC272AF2F73998DDBC6C2D5629F98D5D /* bridge-umbrella.h */,
-				6E14B97A3D868E2CAC2E0B5DD7158691 /* bridge.debug.xcconfig */,
-				77823A43B8FA1F24EB0AE5B196314165 /* bridge.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../../../../Pods/Target Support Files/bridge";
-			sourceTree = "<group>";
-		};
-		4BC58850D0384473BDB95479BD827F60 /* learnflutter */ = {
-			isa = PBXGroup;
-			children = (
-				1C6C8C17EBD8FB8E00A926FC8943CB91 /* .ios */,
-			);
-			name = learnflutter;
-			path = learnflutter;
+			name = ..;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -259,32 +309,70 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		687F1E6B08A530E24E9B447CC811F2FF /* Pod */ = {
+		58E7D6CDDD7CCEAC9F46ECE356FE1ED6 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6CEE0A1D9B890C8238C9A72713C05325 /* FlutterPluginRegistrant.podspec */,
+				20C1B6862990B75F9E6F638D15723051 /* bridge */,
+				68A733646D9A0354835ABD1FCCEE3C6B /* Flutter */,
+				24BD1DACA851F1013C636BD6F6C48FBB /* FlutterPluginRegistrant */,
+				D1915B861B38EBF25E2DE243C3D92B99 /* path_provider_ios */,
 			);
-			name = Pod;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		7271943CFF3DC97B6FAC2DE56EEA555D /* Support Files */ = {
+		5AC68130BDF84DC2C411A2C1FEDBDE57 /* .ios */ = {
 			isa = PBXGroup;
 			children = (
-				AF360B5349BACFBE43CA8B8F834C162B /* Flutter.debug.xcconfig */,
-				28EB4B41E52D1DFA0E46A7348A92EB31 /* Flutter.release.xcconfig */,
+				021B5A6C507593DF93113FC905754362 /* .symlinks */,
 			);
-			name = "Support Files";
-			path = "../Pods/Target Support Files/Flutter";
+			name = .ios;
+			path = .ios;
 			sourceTree = "<group>";
 		};
-		7873A7EE4883EE365E9FE4AF11C87B9C /* Products */ = {
+		635FE5DCA5CB68FA5D3FE617A901A2C3 /* .symlinks */ = {
 			isa = PBXGroup;
 			children = (
-				415FFC30397755D60A2DF51D9C47C935 /* bridge */,
-				DF7C6EBB9161EEF650EC12B4BB67E628 /* FlutterPluginRegistrant */,
-				669E8F25E1897672BDB80B7EB784DA24 /* Pods-Runner */,
+				0FB250B139950FAF57DFE34F7D5B0A8D /* plugins */,
 			);
-			name = Products;
+			name = .symlinks;
+			path = .symlinks;
+			sourceTree = "<group>";
+		};
+		6683756C0208680C80097BBF3F281C78 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				1C29D08FBEAAF864498882589E8A1C7C /* .. */,
+			);
+			name = ..;
+			path = ../../../../../../bridge/ios;
+			sourceTree = "<group>";
+		};
+		68A733646D9A0354835ABD1FCCEE3C6B /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				8AD7DEA55478FC03F3F344B45FFE485B /* Pod */,
+				00A1D44C682FC212EE05B8D35EFDA23A /* Support Files */,
+			);
+			name = Flutter;
+			path = ../Flutter;
+			sourceTree = "<group>";
+		};
+		69EABE4E357BAADC8A9B244FBF0C7CA3 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				09C0328066FB1192B5E4B37F8B6FE482 /* learnflutter */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		765D933B432026CA9440FAC4CCEA99A5 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F9059B41D33C47B3368B2EFA7D9F5 /* .. */,
+			);
+			name = ..;
+			path = "../../../../../../.pub-cache/hosted/pub.dartlang.org/path_provider_ios-2.0.11/ios";
 			sourceTree = "<group>";
 		};
 		791C6E4B424AF06279F8918FA67B8ED6 /* Targets Support Files */ = {
@@ -313,63 +401,153 @@
 			path = "Target Support Files/Pods-Runner";
 			sourceTree = "<group>";
 		};
-		7F04ED53184CA2F0AAF9EDD3ABBC4406 /* bridge */ = {
+		8AD7DEA55478FC03F3F344B45FFE485B /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				E01A278511DA35B396BEF1C1246320F6 /* .. */,
-				3015EF656F3F22D17B31929E4D20AB19 /* Pod */,
-				3123F3EA56E1028831CF4DE0DB78DB8D /* Support Files */,
+				365B77F490B336CCE66AB315C6F1BBDA /* Flutter.podspec */,
 			);
-			name = bridge;
-			path = ../.symlinks/plugins/bridge/ios;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		89715A61C4B9C0981F6D7D52A158EE43 /* Flutter */ = {
+		9AEEFAAA9EAE556D83F7E22A83F78D49 /* .. */ = {
 			isa = PBXGroup;
 			children = (
-				18B7DD82BF5A5763FC5F2B13AF189EC3 /* Pod */,
-				7271943CFF3DC97B6FAC2DE56EEA555D /* Support Files */,
-			);
-			name = Flutter;
-			path = ../Flutter;
-			sourceTree = "<group>";
-		};
-		8F0345E41E882605D5D55BF1C160D57F /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				0653C83AF70A7CD196B683865813E2B2 /* .. */,
+				BE928100A1F2F41B60B7E6A067276C7A /* learnflutter */,
 			);
 			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
-		C066294E5A56EFD9A3DF532153773053 /* plugins */ = {
+		9EF01DD89D0BECC4F103CDECA825DFC3 /* .. */ = {
 			isa = PBXGroup;
 			children = (
-				CAF2FC112EC5675723C7F094393010AA /* bridge */,
+				52E4CA4943CE64B6073CF6D862425491 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		AC6C8DBCAD0BB3CFC282F1D5C17C6DF9 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				BFD49EC5008C16116D5FC82C15D274D8 /* path_provider_ios */,
 			);
 			name = plugins;
 			path = plugins;
 			sourceTree = "<group>";
 		};
-		CAF2FC112EC5675723C7F094393010AA /* bridge */ = {
+		B7EB6EA35F04C86C37B79A49EABEDE05 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				068B4064DF9C6B209439F377C6C1F85D /* ios */,
+				6130D8EF6163CB7220F6D1A904B95C3D /* FLTPathProviderPlugin.h */,
+				A90857222245FA2744021D19091515FB /* FLTPathProviderPlugin.m */,
+				6087E6F89B0E3DCF8131038C2F0837A9 /* messages.g.h */,
+				C954FEE37656B0E82B90DE060489DE82 /* messages.g.m */,
 			);
-			name = bridge;
-			path = bridge;
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B96D6B072B62D4DC965ECDD1469A6F6B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A36D8791E4EAD8454CD9059BA8D4EB06 /* FlutterPluginRegistrant.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		BB3D4D2E0A8F4600CF29F9001834B936 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				69EABE4E357BAADC8A9B244FBF0C7CA3 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		BE928100A1F2F41B60B7E6A067276C7A /* learnflutter */ = {
+			isa = PBXGroup;
+			children = (
+				E926FFDE592ACBA525C6893633D75DE3 /* .ios */,
+			);
+			name = learnflutter;
+			path = learnflutter;
+			sourceTree = "<group>";
+		};
+		BFD49EC5008C16116D5FC82C15D274D8 /* path_provider_ios */ = {
+			isa = PBXGroup;
+			children = (
+				E74B6BBBBD4ECAEDBA4955237367EB9E /* ios */,
+			);
+			name = path_provider_ios;
+			path = path_provider_ios;
+			sourceTree = "<group>";
+		};
+		C26160830DDA1DE242194DB9DB798F4E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B3C4F3AB950F733675F584B3738FE1D /* path_provider_ios.modulemap */,
+				E6D4A8FAA9CBF8E5A5003D9D7898F78A /* path_provider_ios-dummy.m */,
+				8DE6CA193A88008577C1EB8D96D13B87 /* path_provider_ios-Info.plist */,
+				8205195DC533BA1AA8C9F7324598B0E0 /* path_provider_ios-prefix.pch */,
+				2AEE5B835C0E84D9D23F74A4B71D3590 /* path_provider_ios-umbrella.h */,
+				276A557C80C3F2834B108B755BF30234 /* path_provider_ios.debug.xcconfig */,
+				C8E94271B55A08B77D0BD82F8BA14BA9 /* path_provider_ios.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../../../Pods/Target Support Files/path_provider_ios";
+			sourceTree = "<group>";
+		};
+		C6965E0F83B2EE449F4F8BC9BFFFE72F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				68FA455CDAA6AAA550E1088B28A3B069 /* FlutterPluginRegistrant.modulemap */,
+				34E69D3F1558A66A059CD7A5424FE750 /* FlutterPluginRegistrant-dummy.m */,
+				2616F94F9B5137DACB8A5C755DC14F92 /* FlutterPluginRegistrant-Info.plist */,
+				AD789B37D4421E63A8F75741C721D0DC /* FlutterPluginRegistrant-prefix.pch */,
+				7C03FA4934459329029039C71F326D6B /* FlutterPluginRegistrant-umbrella.h */,
+				9A96417B94D69229FC81FB730C40ADBC /* FlutterPluginRegistrant.debug.xcconfig */,
+				9368B6F7C05AE9FAB2C41D60288BDE66 /* FlutterPluginRegistrant.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/FlutterPluginRegistrant";
+			sourceTree = "<group>";
+		};
+		CCB4F11ECFF51D99B522B4683487CAB3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				35F28AFDC83BB0981D7EA80231F1FE94 /* bridge.modulemap */,
+				3CAA9165F08012CB7524ADFB6E5048B5 /* bridge-dummy.m */,
+				38494C21A5B40F4690BFCC9A55EC958E /* bridge-Info.plist */,
+				3C1B18B4580BC20CE03F0AEFCED5AA39 /* bridge-prefix.pch */,
+				3E89B90B10A80D3DE2C724A261B24172 /* bridge-umbrella.h */,
+				7567F8B2D1A21D3CC0A25D01D7C1AF4D /* bridge.debug.xcconfig */,
+				B3A1AD3B6EA11FAF5F5979FC026804F1 /* bridge.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../../../Pods/Target Support Files/bridge";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				DCDEEDC828FC97B32A76AEF7509C80C8 /* Development Pods */,
+				58E7D6CDDD7CCEAC9F46ECE356FE1ED6 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				7873A7EE4883EE365E9FE4AF11C87B9C /* Products */,
+				FFD7AA892A1C5B4CB0BCD851F3C88397 /* Products */,
 				791C6E4B424AF06279F8918FA67B8ED6 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D1915B861B38EBF25E2DE243C3D92B99 /* path_provider_ios */ = {
+			isa = PBXGroup;
+			children = (
+				765D933B432026CA9440FAC4CCEA99A5 /* .. */,
+				0BF9296FFF4FC42F1F5134EFE6823063 /* Pod */,
+				C26160830DDA1DE242194DB9DB798F4E /* Support Files */,
+			);
+			name = path_provider_ios;
+			path = ../.symlinks/plugins/path_provider_ios/ios;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -380,93 +558,152 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DCDEEDC828FC97B32A76AEF7509C80C8 /* Development Pods */ = {
+		E7061A6F5B52B4A88BEF1CF69226BC50 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				7F04ED53184CA2F0AAF9EDD3ABBC4406 /* bridge */,
-				89715A61C4B9C0981F6D7D52A158EE43 /* Flutter */,
-				E2E1F35C7573A5AFEF0700BC764F6767 /* FlutterPluginRegistrant */,
+				AEDA05A6B1898CF66EDAEE15C4B15CA2 /* BridgePlugin.h */,
+				EC628E0E2753E7010B012091067D2D58 /* BridgePlugin.m */,
+				E52DD2CB7C2DBE9A020C6364650F15F2 /* Constants.h */,
+				2B7FDDBE5C8148A5D10D971A3B77F844 /* Constants.m */,
+				046A7625972982A010F09342A7F861EB /* SwiftBridgePlugin.swift */,
 			);
-			name = "Development Pods";
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		E01A278511DA35B396BEF1C1246320F6 /* .. */ = {
+		E74B6BBBBD4ECAEDBA4955237367EB9E /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				8F0345E41E882605D5D55BF1C160D57F /* .. */,
+				B7EB6EA35F04C86C37B79A49EABEDE05 /* Classes */,
+			);
+			name = ios;
+			path = ios;
+			sourceTree = "<group>";
+		};
+		E926FFDE592ACBA525C6893633D75DE3 /* .ios */ = {
+			isa = PBXGroup;
+			children = (
+				635FE5DCA5CB68FA5D3FE617A901A2C3 /* .symlinks */,
+			);
+			name = .ios;
+			path = .ios;
+			sourceTree = "<group>";
+		};
+		FA7F9059B41D33C47B3368B2EFA7D9F5 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				9EF01DD89D0BECC4F103CDECA825DFC3 /* .. */,
 			);
 			name = ..;
-			path = ../../../../../../bridge/ios;
+			path = ..;
 			sourceTree = "<group>";
 		};
-		E2E1F35C7573A5AFEF0700BC764F6767 /* FlutterPluginRegistrant */ = {
+		FAC92A3F3560B5E6BC4347FFB66DA18E /* bridge */ = {
 			isa = PBXGroup;
 			children = (
-				2764E31028F29CB2C232174EB9F9B182 /* GeneratedPluginRegistrant.h */,
-				E9DD4D80A613855B0C2B247962BDAADC /* GeneratedPluginRegistrant.m */,
-				687F1E6B08A530E24E9B447CC811F2FF /* Pod */,
-				13DD55EE9AE70299ADC06B3DD71D5EFF /* Support Files */,
+				4756F98A05BB482BFBE2944CFBD6C2BB /* ios */,
 			);
-			name = FlutterPluginRegistrant;
-			path = ../Flutter/FlutterPluginRegistrant;
+			name = bridge;
+			path = bridge;
 			sourceTree = "<group>";
 		};
-		F1C5BADA1669D6B6FD9F79D15B02F42C /* .symlinks */ = {
+		FDA956D60F6B1928FD49365E95478AD2 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				C066294E5A56EFD9A3DF532153773053 /* plugins */,
+				3C04D5DE29DC62F30BD26CABA9D65826 /* bridge.podspec */,
+				67626F2721D7FCEF52306BDF660D0C75 /* LICENSE */,
 			);
-			name = .symlinks;
-			path = .symlinks;
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		FFD7AA892A1C5B4CB0BCD851F3C88397 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				415FFC30397755D60A2DF51D9C47C935 /* bridge */,
+				DF7C6EBB9161EEF650EC12B4BB67E628 /* FlutterPluginRegistrant */,
+				BEDB77D7DFDD5C9008E7D3FC4206FEC9 /* path_provider_ios */,
+				669E8F25E1897672BDB80B7EB784DA24 /* Pods-Runner */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		67084D69F163826B40CA45942D54ADBB /* Headers */ = {
+		1E657D730035B3D8125CF68C8AC79AD1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A919792335EBEFC08912173424D32323 /* Pods-Runner-umbrella.h in Headers */,
+				233BC13C4EBB02568B0837C7B7ED7B93 /* Pods-Runner-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D606D9012EC7826266CCDCD57CBBC3C /* Headers */ = {
+		32DD40EB50476DE14B4302381651733D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B875984D065103E2DE2D2CBF62B9B02D /* bridge-umbrella.h in Headers */,
-				7989FFFAD7B9B81589BB3346399390FF /* BridgePlugin.h in Headers */,
-				20BAF250000BA105005ADD15C68E2224 /* Constants.h in Headers */,
+				1E355118D5C46D04B475779F5F6E6164 /* FlutterPluginRegistrant-umbrella.h in Headers */,
+				FB095F0F2E944EEBEBA3F95CA4606785 /* GeneratedPluginRegistrant.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC8A173B69570FD14E996D4D462D430E /* Headers */ = {
+		6A39F03004C0DDF29B32B131E6DA8098 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D709E2F818FAE9816485837F4957258 /* FlutterPluginRegistrant-umbrella.h in Headers */,
-				7BFA7A5D0813D289AD1A2E202814B041 /* GeneratedPluginRegistrant.h in Headers */,
+				28D5859D4685A7C7084E29F728BBED77 /* bridge-umbrella.h in Headers */,
+				526363C61772F5E85358932E794C7C07 /* BridgePlugin.h in Headers */,
+				6B049F4EE938D75CE1086AB1E2B9B199 /* Constants.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1EA3D5B78B27AB826DD213D0842928C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C485CF6940311BF0D8E0574322673B /* FLTPathProviderPlugin.h in Headers */,
+				19E343462AF70ACD1065686462310C28 /* messages.g.h in Headers */,
+				CF9AAD5CB53F851F2A441874F7B5C919 /* path_provider_ios-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		83DAA8F43D74F8D51203DE23C7C3A3F5 /* FlutterPluginRegistrant */ = {
+		0F87638CDABF68BA05567B371A176C3A /* path_provider_ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 071F20C252EE80FD242E2CD6DDF92C1E /* Build configuration list for PBXNativeTarget "FlutterPluginRegistrant" */;
+			buildConfigurationList = 5813CB13043029F43133685F0DC026B1 /* Build configuration list for PBXNativeTarget "path_provider_ios" */;
 			buildPhases = (
-				CC8A173B69570FD14E996D4D462D430E /* Headers */,
-				9207A3D9AEE0D87561236763DD5363E1 /* Sources */,
-				DF9317F7283D41FE9DC09C24D3E9EA4F /* Frameworks */,
-				692090E1296CE90FF540A2122F8F689E /* Resources */,
+				D1EA3D5B78B27AB826DD213D0842928C /* Headers */,
+				FC618C66E2BB09F039D94DD2D834D666 /* Sources */,
+				7DC90A7347D2C4FB09BB7ABA52DB5123 /* Frameworks */,
+				50A5B66631A728B259E78ED04E7C3BB0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				010AE593301EBBA67D13A5575CB5AFA8 /* PBXTargetDependency */,
-				BAB84E1639D61BBB1EE7944890B2EB45 /* PBXTargetDependency */,
+				6B8A219A344A405D2637D5E8F93C6023 /* PBXTargetDependency */,
+			);
+			name = path_provider_ios;
+			productName = path_provider_ios;
+			productReference = BEDB77D7DFDD5C9008E7D3FC4206FEC9 /* path_provider_ios */;
+			productType = "com.apple.product-type.framework";
+		};
+		83DAA8F43D74F8D51203DE23C7C3A3F5 /* FlutterPluginRegistrant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B59517C1CFB64F6402F8AA30CE3C83E6 /* Build configuration list for PBXNativeTarget "FlutterPluginRegistrant" */;
+			buildPhases = (
+				32DD40EB50476DE14B4302381651733D /* Headers */,
+				2D85F62BD5933CD1372EA63107AAAD5A /* Sources */,
+				30A696FF150C8AC983C122DB1A8C04E9 /* Frameworks */,
+				82F9EE0D28152DC558B362AB84C090D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F96D89BD3A8B77032E1DFF5484CFE61 /* PBXTargetDependency */,
+				E1880612B4ED434A1D4BBB9E5E8AB476 /* PBXTargetDependency */,
+				28C29105FEA487B6548C04578C280807 /* PBXTargetDependency */,
 			);
 			name = FlutterPluginRegistrant;
 			productName = FlutterPluginRegistrant;
@@ -475,19 +712,20 @@
 		};
 		8B74B458B450D74B75744B87BD747314 /* Pods-Runner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB3BF7287D0ECE9B2C3F40B3637941F0 /* Build configuration list for PBXNativeTarget "Pods-Runner" */;
+			buildConfigurationList = C14272EC8E00B68EFFC07FCE60FFD718 /* Build configuration list for PBXNativeTarget "Pods-Runner" */;
 			buildPhases = (
-				67084D69F163826B40CA45942D54ADBB /* Headers */,
-				7D910DC1F35A2E00AD4E8AF6F9F47500 /* Sources */,
-				2868D7DBCE32302942C384429EDFA3B6 /* Frameworks */,
-				2A92F830B787DB6DFB09218446835956 /* Resources */,
+				1E657D730035B3D8125CF68C8AC79AD1 /* Headers */,
+				BB035270B3D9594CD2FAB14852857EEF /* Sources */,
+				3254A45D326388A8AFB404BCE6E55960 /* Frameworks */,
+				67551D91EE5C80F3EAF7E3860ED0F8AF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6DD0FD143E5C8644D9E49C5241DE5417 /* PBXTargetDependency */,
-				2A225280C8969B750622926C7AED781F /* PBXTargetDependency */,
-				FC8FC5968003D4300631A1D7650E3F97 /* PBXTargetDependency */,
+				59EA73A6B4D88E4F6E7EF28AEA507CB3 /* PBXTargetDependency */,
+				80A737FF0D4938CD7DC3B486F912AE06 /* PBXTargetDependency */,
+				AA5535EA98AAC0258C579BC17E9E0636 /* PBXTargetDependency */,
+				DA4738A3844B52D051E7F24483B69690 /* PBXTargetDependency */,
 			);
 			name = "Pods-Runner";
 			productName = Pods_Runner;
@@ -496,17 +734,17 @@
 		};
 		DDD06FEA207CFA8697C4BDF99DF665B7 /* bridge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB63C92DF565189D46787D4FCC787E53 /* Build configuration list for PBXNativeTarget "bridge" */;
+			buildConfigurationList = 89FF2DA63DB410755C3735FC4822C7B2 /* Build configuration list for PBXNativeTarget "bridge" */;
 			buildPhases = (
-				9D606D9012EC7826266CCDCD57CBBC3C /* Headers */,
-				62779F630A5F9AF7BBC5F27CBE8C7D7B /* Sources */,
-				1F972A5C9C16D6D9A672F2984A90806C /* Frameworks */,
-				0D1153C46DD7426114160836530C2AEB /* Resources */,
+				6A39F03004C0DDF29B32B131E6DA8098 /* Headers */,
+				F1C35EA21D4405A4D90BEC0C5ECC6850 /* Sources */,
+				C7A092BCA7A213290B53632EB3EE7D7C /* Frameworks */,
+				2CC36CBE82569985692EAE7E8B6DFA5F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A699778214707B17CD8CB1C91456D226 /* PBXTargetDependency */,
+				6E95D3BD8F69E51FEF9F5059D63B2AA4 /* PBXTargetDependency */,
 			);
 			name = bridge;
 			productName = bridge;
@@ -531,34 +769,42 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 7873A7EE4883EE365E9FE4AF11C87B9C /* Products */;
+			productRefGroup = FFD7AA892A1C5B4CB0BCD851F3C88397 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				DDD06FEA207CFA8697C4BDF99DF665B7 /* bridge */,
 				1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */,
 				83DAA8F43D74F8D51203DE23C7C3A3F5 /* FlutterPluginRegistrant */,
+				0F87638CDABF68BA05567B371A176C3A /* path_provider_ios */,
 				8B74B458B450D74B75744B87BD747314 /* Pods-Runner */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0D1153C46DD7426114160836530C2AEB /* Resources */ = {
+		2CC36CBE82569985692EAE7E8B6DFA5F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A92F830B787DB6DFB09218446835956 /* Resources */ = {
+		50A5B66631A728B259E78ED04E7C3BB0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		692090E1296CE90FF540A2122F8F689E /* Resources */ = {
+		67551D91EE5C80F3EAF7E3860ED0F8AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F9EE0D28152DC558B362AB84C090D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -568,79 +814,107 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		62779F630A5F9AF7BBC5F27CBE8C7D7B /* Sources */ = {
+		2D85F62BD5933CD1372EA63107AAAD5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D51F82523CF8FDC716C2EAA2DBE3CF66 /* bridge-dummy.m in Sources */,
-				7AD950AA64CC9D70EAFFD8295DBCD0E3 /* BridgePlugin.m in Sources */,
-				0F88B3ED41F7DDAE03544D32802EDFAD /* Constants.m in Sources */,
-				299C41C24B8912C5CB7F5E70BEDC7096 /* SwiftBridgePlugin.swift in Sources */,
+				68E62CE91E4F3B493B07517180791A06 /* FlutterPluginRegistrant-dummy.m in Sources */,
+				10B0BE9EB47851BCA67586D764E5AA93 /* GeneratedPluginRegistrant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D910DC1F35A2E00AD4E8AF6F9F47500 /* Sources */ = {
+		BB035270B3D9594CD2FAB14852857EEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58FC4264662DE9553FF8E3F7B5ED4471 /* Pods-Runner-dummy.m in Sources */,
+				4500D7BA07D20C60604AE5429E325D27 /* Pods-Runner-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9207A3D9AEE0D87561236763DD5363E1 /* Sources */ = {
+		F1C35EA21D4405A4D90BEC0C5ECC6850 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				025FC20AAED0F0D0F3DD761E7958975E /* FlutterPluginRegistrant-dummy.m in Sources */,
-				DB34EFDE058320F09452D891609E4901 /* GeneratedPluginRegistrant.m in Sources */,
+				2FEF955572D063C20E1234BB037F3B46 /* bridge-dummy.m in Sources */,
+				D401ED753D68F3A8A6651D251192395C /* BridgePlugin.m in Sources */,
+				5C0A4441EB2BBB5CE213D1EDD89BF31F /* Constants.m in Sources */,
+				EA84C10A67D07FB7AC314B2FBC981293 /* SwiftBridgePlugin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC618C66E2BB09F039D94DD2D834D666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5700BCE5590C0F6E7947E05C1152BF /* FLTPathProviderPlugin.m in Sources */,
+				3AB50F1C1FA123A1894D879DB95B3889 /* messages.g.m in Sources */,
+				B02F4C513B3FEF5E9189DA130BB2E30B /* path_provider_ios-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		010AE593301EBBA67D13A5575CB5AFA8 /* PBXTargetDependency */ = {
+		28C29105FEA487B6548C04578C280807 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = path_provider_ios;
+			target = 0F87638CDABF68BA05567B371A176C3A /* path_provider_ios */;
+			targetProxy = 90A264FF3E35FC568FBE390C06098CFC /* PBXContainerItemProxy */;
+		};
+		59EA73A6B4D88E4F6E7EF28AEA507CB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Flutter;
 			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
-			targetProxy = 809D0FE7A75607D1F2F30E215CC4C12D /* PBXContainerItemProxy */;
+			targetProxy = B3E9D0FB4043539C771F74FA5043303E /* PBXContainerItemProxy */;
 		};
-		2A225280C8969B750622926C7AED781F /* PBXTargetDependency */ = {
+		5F96D89BD3A8B77032E1DFF5484CFE61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flutter;
+			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
+			targetProxy = D4A3669C05DD8C06FC7C00F1CB40E28F /* PBXContainerItemProxy */;
+		};
+		6B8A219A344A405D2637D5E8F93C6023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flutter;
+			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
+			targetProxy = D50773C454D623C2D3A4C38F228D9377 /* PBXContainerItemProxy */;
+		};
+		6E95D3BD8F69E51FEF9F5059D63B2AA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flutter;
+			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
+			targetProxy = 3CFFEB02DE0E61A918331C4FB23F6523 /* PBXContainerItemProxy */;
+		};
+		80A737FF0D4938CD7DC3B486F912AE06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FlutterPluginRegistrant;
 			target = 83DAA8F43D74F8D51203DE23C7C3A3F5 /* FlutterPluginRegistrant */;
-			targetProxy = AD075E0A3363FA15C5CEA06DE6416AC4 /* PBXContainerItemProxy */;
+			targetProxy = C19AB2F948C713D06D9721298D109C7F /* PBXContainerItemProxy */;
 		};
-		6DD0FD143E5C8644D9E49C5241DE5417 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Flutter;
-			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
-			targetProxy = 4592F9A02DE87C88AFDC1AFEE91CE59E /* PBXContainerItemProxy */;
-		};
-		A699778214707B17CD8CB1C91456D226 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Flutter;
-			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
-			targetProxy = 4BF09CE4FE20887502C0FA79D60CA184 /* PBXContainerItemProxy */;
-		};
-		BAB84E1639D61BBB1EE7944890B2EB45 /* PBXTargetDependency */ = {
+		AA5535EA98AAC0258C579BC17E9E0636 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = bridge;
 			target = DDD06FEA207CFA8697C4BDF99DF665B7 /* bridge */;
-			targetProxy = FE008853733572201411F40A6A116438 /* PBXContainerItemProxy */;
+			targetProxy = BF344D8D6FEAB36FFD5A2AFC94BA9269 /* PBXContainerItemProxy */;
 		};
-		FC8FC5968003D4300631A1D7650E3F97 /* PBXTargetDependency */ = {
+		DA4738A3844B52D051E7F24483B69690 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = path_provider_ios;
+			target = 0F87638CDABF68BA05567B371A176C3A /* path_provider_ios */;
+			targetProxy = 67C55645ED5241C6FF10377822B10AB0 /* PBXContainerItemProxy */;
+		};
+		E1880612B4ED434A1D4BBB9E5E8AB476 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = bridge;
 			target = DDD06FEA207CFA8697C4BDF99DF665B7 /* bridge */;
-			targetProxy = B1C00928C6220E434DBC8A9669F10E82 /* PBXContainerItemProxy */;
+			targetProxy = 7B9D99A24618F09326A0631E2D99CC89 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		049A9DF21B5D9C438C45FD80A89F7B86 /* Profile */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28EB4B41E52D1DFA0E46A7348A92EB31 /* Flutter.release.xcconfig */;
+			baseConfigurationReference = 490541CE5C29CBD6E509EE0E07176A9B /* Flutter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -655,29 +929,30 @@
 			};
 			name = Profile;
 		};
-		0B81DA7E3AE9F845C68CEBD6C6982E1E /* Profile */ = {
+		19BCCC76DB378576DD2DB14D87B90B6D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D176F127DE77D19ED01193C8BBE5852 /* FlutterPluginRegistrant.release.xcconfig */;
+			baseConfigurationReference = CDAECCF4B5E08124ED410F09FD5A5DF9 /* Pods-Runner.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
-					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_armv7\"",
+					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64_armv7\"",
 					"$(inherited)",
 				);
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
 					"$(inherited)",
 				);
-				GCC_PREFIX_HEADER = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Runner/Pods-Runner-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -686,24 +961,25 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Runner/Pods-Runner.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
 					Flutter,
 				);
-				PRODUCT_MODULE_NAME = FlutterPluginRegistrant;
-				PRODUCT_NAME = FlutterPluginRegistrant;
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				"VALID_ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Profile;
+			name = Debug;
 		};
 		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -771,26 +1047,9 @@
 			};
 			name = Debug;
 		};
-		27A049D271528D31C812A4A83411DCE9 /* Release */ = {
+		25DCEAEFCBF34A52A1577FF80EA28892 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28EB4B41E52D1DFA0E46A7348A92EB31 /* Flutter.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		3026B392D96A3F4A4E99B0F08C242352 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E14B97A3D868E2CAC2E0B5DD7158691 /* bridge.debug.xcconfig */;
+			baseConfigurationReference = 9A96417B94D69229FC81FB730C40ADBC /* FlutterPluginRegistrant.debug.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -809,6 +1068,56 @@
 					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
 					"$(inherited)",
 				);
+				GCC_PREFIX_HEADER = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Flutter,
+				);
+				PRODUCT_MODULE_NAME = FlutterPluginRegistrant;
+				PRODUCT_NAME = FlutterPluginRegistrant;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				"VALID_ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2700901183FF6B0FEC719EF1B93622D4 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3A1AD3B6EA11FAF5F5979FC026804F1 /* bridge.release.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_armv7\"",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"$(inherited)",
+				);
 				GCC_PREFIX_HEADER = "Target Support Files/bridge/bridge-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/bridge/bridge-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -819,7 +1128,6 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/bridge/bridge.modulemap";
-				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -832,15 +1140,132 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				"VALID_ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Profile;
+		};
+		27A049D271528D31C812A4A83411DCE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 490541CE5C29CBD6E509EE0E07176A9B /* Flutter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A4B01B5B027DF4510AEDA395767C074 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9368B6F7C05AE9FAB2C41D60288BDE66 /* FlutterPluginRegistrant.release.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_armv7\"",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant.modulemap";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Flutter,
+				);
+				PRODUCT_MODULE_NAME = FlutterPluginRegistrant;
+				PRODUCT_NAME = FlutterPluginRegistrant;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Profile;
+		};
+		4A6A8D3D55A101E6422318975DB640C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8E94271B55A08B77D0BD82F8BA14BA9 /* path_provider_ios.release.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_armv7\"",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/path_provider_ios/path_provider_ios-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/path_provider_ios/path_provider_ios-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/path_provider_ios/path_provider_ios.modulemap";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Flutter,
+				);
+				PRODUCT_MODULE_NAME = path_provider_ios;
+				PRODUCT_NAME = path_provider_ios;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		4AB35B83B0CAEEB2C788277E1416BD0C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF360B5349BACFBE43CA8B8F834C162B /* Flutter.debug.xcconfig */;
+			baseConfigurationReference = 2400D0E9A7CF66A75CFFE6501C0DCDFD /* Flutter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -917,61 +1342,9 @@
 			};
 			name = Profile;
 		};
-		5055D110743EC4DAAE70A7D1522B8755 /* Profile */ = {
+		6CD29C43A6673DECECF932B4A19687C6 /* Profile */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F79F8269DC34AC56BB3D1D9652C0D86 /* Pods-Runner.profile.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
-					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_armv7\"",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Target Support Files/Pods-Runner/Pods-Runner-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Runner/Pods-Runner.modulemap";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					Flutter,
-				);
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				"VALID_ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Profile;
-		};
-		572ECB8A9618434D1C8EBB53BE2AF6F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D176F127DE77D19ED01193C8BBE5852 /* FlutterPluginRegistrant.release.xcconfig */;
+			baseConfigurationReference = C8E94271B55A08B77D0BD82F8BA14BA9 /* path_provider_ios.release.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -990,8 +1363,8 @@
 					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
 					"$(inherited)",
 				);
-				GCC_PREFIX_HEADER = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/path_provider_ios/path_provider_ios-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/path_provider_ios/path_provider_ios-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -999,15 +1372,14 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant.modulemap";
+				MODULEMAP_FILE = "Target Support Files/path_provider_ios/path_provider_ios.modulemap";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
 					Flutter,
 				);
-				PRODUCT_MODULE_NAME = FlutterPluginRegistrant;
-				PRODUCT_NAME = FlutterPluginRegistrant;
+				PRODUCT_MODULE_NAME = path_provider_ios;
+				PRODUCT_NAME = path_provider_ios;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1017,11 +1389,61 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Profile;
 		};
-		6B7817E6BEA2D62C063F21419EECB793 /* Release */ = {
+		729A9A37E71AEA3F2DB5E963CBE625A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77823A43B8FA1F24EB0AE5B196314165 /* bridge.release.xcconfig */;
+			baseConfigurationReference = 7567F8B2D1A21D3CC0A25D01D7C1AF4D /* bridge.debug.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64_armv7\"",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/bridge/bridge-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/bridge/bridge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/bridge/bridge.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Flutter,
+				);
+				PRODUCT_MODULE_NAME = bridge;
+				PRODUCT_NAME = bridge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				"VALID_ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B9279559AB0FB8CFD8E559C64A84682 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3A1AD3B6EA11FAF5F5979FC026804F1 /* bridge.release.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1069,9 +1491,9 @@
 			};
 			name = Release;
 		};
-		8DAC7C1822B63B65668975EC1BE644D3 /* Debug */ = {
+		A814B412047E6B1724F7DCBC361E54E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74F798CF285E2FF0E8A54268A84F1698 /* FlutterPluginRegistrant.debug.xcconfig */;
+			baseConfigurationReference = 276A557C80C3F2834B108B755BF30234 /* path_provider_ios.debug.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1088,6 +1510,55 @@
 				);
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
 					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/path_provider_ios/path_provider_ios-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/path_provider_ios/path_provider_ios-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/path_provider_ios/path_provider_ios.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Flutter,
+				);
+				PRODUCT_MODULE_NAME = path_provider_ios;
+				PRODUCT_NAME = path_provider_ios;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				"VALID_ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC5669CA0A7C384FE94A12C404DBCF8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9368B6F7C05AE9FAB2C41D60288BDE66 /* FlutterPluginRegistrant.release.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_armv7\"",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
 					"$(inherited)",
 				);
 				GCC_PREFIX_HEADER = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant-prefix.pch";
@@ -1101,7 +1572,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant.modulemap";
-				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -1113,63 +1583,12 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				"VALID_ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
-		};
-		B746DEA1E30573821A91A85820933266 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDAECCF4B5E08124ED410F09FD5A5DF9 /* Pods-Runner.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
-					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64_armv7\"",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Target Support Files/Pods-Runner/Pods-Runner-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Runner/Pods-Runner.modulemap";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					Flutter,
-				);
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				"VALID_ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
+			name = Release;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1233,7 +1652,7 @@
 			};
 			name = Release;
 		};
-		E30A95AA471168264D003D90A202412B /* Release */ = {
+		D2CC390E339D2B1D5FAEA79398F5382B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D2FA70CA298C392CB8332ADEEDD1CE85 /* Pods-Runner.release.xcconfig */;
 			buildSettings = {
@@ -1285,15 +1704,17 @@
 			};
 			name = Release;
 		};
-		EFE56F2771E4208A4A2F9B98885647F5 /* Profile */ = {
+		FE733ECE8B89DA37E2D0E2B9D1D2647E /* Profile */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77823A43B8FA1F24EB0AE5B196314165 /* bridge.release.xcconfig */;
+			baseConfigurationReference = 9F79F8269DC34AC56BB3D1D9652C0D86 /* Pods-Runner.profile.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1306,8 +1727,7 @@
 					"\"/Users/behind47/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
 					"$(inherited)",
 				);
-				GCC_PREFIX_HEADER = "Target Support Files/bridge/bridge-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/bridge/bridge-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Runner/Pods-Runner-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1315,18 +1735,19 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/bridge/bridge.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Runner/Pods-Runner.modulemap";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
 					Flutter,
 				);
-				PRODUCT_MODULE_NAME = bridge;
-				PRODUCT_NAME = bridge;
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				"VALID_ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
@@ -1338,22 +1759,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		071F20C252EE80FD242E2CD6DDF92C1E /* Build configuration list for PBXNativeTarget "FlutterPluginRegistrant" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8DAC7C1822B63B65668975EC1BE644D3 /* Debug */,
-				0B81DA7E3AE9F845C68CEBD6C6982E1E /* Profile */,
-				572ECB8A9618434D1C8EBB53BE2AF6F6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
 				4AC17E5E5FB9F2FFF05E88EFD49D95C8 /* Profile */,
 				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5813CB13043029F43133685F0DC026B1 /* Build configuration list for PBXNativeTarget "path_provider_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A814B412047E6B1724F7DCBC361E54E7 /* Debug */,
+				6CD29C43A6673DECECF932B4A19687C6 /* Profile */,
+				4A6A8D3D55A101E6422318975DB640C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89FF2DA63DB410755C3735FC4822C7B2 /* Build configuration list for PBXNativeTarget "bridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				729A9A37E71AEA3F2DB5E963CBE625A2 /* Debug */,
+				2700901183FF6B0FEC719EF1B93622D4 /* Profile */,
+				9B9279559AB0FB8CFD8E559C64A84682 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1368,22 +1799,22 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB3BF7287D0ECE9B2C3F40B3637941F0 /* Build configuration list for PBXNativeTarget "Pods-Runner" */ = {
+		B59517C1CFB64F6402F8AA30CE3C83E6 /* Build configuration list for PBXNativeTarget "FlutterPluginRegistrant" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B746DEA1E30573821A91A85820933266 /* Debug */,
-				5055D110743EC4DAAE70A7D1522B8755 /* Profile */,
-				E30A95AA471168264D003D90A202412B /* Release */,
+				25DCEAEFCBF34A52A1577FF80EA28892 /* Debug */,
+				2A4B01B5B027DF4510AEDA395767C074 /* Profile */,
+				BC5669CA0A7C384FE94A12C404DBCF8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB63C92DF565189D46787D4FCC787E53 /* Build configuration list for PBXNativeTarget "bridge" */ = {
+		C14272EC8E00B68EFFC07FCE60FFD718 /* Build configuration list for PBXNativeTarget "Pods-Runner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3026B392D96A3F4A4E99B0F08C242352 /* Debug */,
-				EFE56F2771E4208A4A2F9B98885647F5 /* Profile */,
-				6B7817E6BEA2D62C063F21419EECB793 /* Release */,
+				19BCCC76DB378576DD2DB14D87B90B6D /* Debug */,
+				FE733ECE8B89DA37E2D0E2B9D1D2647E /* Profile */,
+				D2CC390E339D2B1D5FAEA79398F5382B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

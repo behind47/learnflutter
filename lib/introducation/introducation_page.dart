@@ -1,5 +1,13 @@
+import 'dart:io';
+import 'dart:typed_data';
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:learnflutter/util/widget_operation_end.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:pdf/pdf.dart';
+import 'package:pdf/widgets.dart' as pw;
 
 class IntroducationPage extends StatefulWidget {
   @override
@@ -10,15 +18,36 @@ class IntroducationPage extends StatefulWidget {
 
 class IntroducationPageState extends State<IntroducationPage> {
   List<BedBaseViewModel>? viewModels;
+  var globalKey;
 
   @override
   void initState() {
+    globalKey = GlobalKey();
     viewModels = [
       BedPersonalInfoVM(
           name: "章三", age: "22", tel: "44444444444", email: "qq@gmail.com"),
       BedSkillVM(),
       BedEducationVM(),
-      BedJobVM()
+      BedJobVM(),
+      BedPdfVM()..tap = () async {
+        var boundary = globalKey.currentContext.findRenderObject() as RenderRepaintBoundary;
+        var image = await boundary.toImage(pixelRatio: MediaQuery.of(context).devicePixelRatio);
+        ByteData? byteData = await image.toByteData(format: ImageByteFormat.png);
+        Uint8List? pngBytes = byteData?.buffer.asUint8List();
+        
+        final pdf = pw.Document();
+        pdf.addPage(pw.Page(
+            pageFormat: PdfPageFormat.a4,
+            build: (pw.Context context) {
+              return pw.Image(pw.MemoryImage(pngBytes!));
+            }));
+        Directory appDocDir = await getApplicationDocumentsDirectory();
+        print('ApplicationDocumentsDirectory: ${appDocDir.path}');
+        final file = File(appDocDir.path+'pdfexample.pdf');
+
+        await file.writeAsBytes(await pdf.save());
+        print(file.path + 'succeed to save pdf');
+      }
     ];
     super.initState();
   }
@@ -29,10 +58,12 @@ class IntroducationPageState extends State<IntroducationPage> {
       appBar: AppBar(
         title: Text('简历'),
       ),
-      body: Container(
+      body: RepaintBoundary(
+        key: globalKey,
+        child: Container(
           child: ListView(
         children: viewModels!.map((e) => e.buildContent()).toList(),
-      )),
+      )),),
     );
   }
 }
@@ -135,17 +166,44 @@ class BedSkillVM extends BedBaseViewModel {
   @override
   Widget buildContent() {
     return Container(
-      child: Text('iOS, Objective-C, Swift', textAlign: TextAlign.start,).withPadding(EdgeInsets.only(top: 20, bottom: 20, left: 15, right: 15)),
+      child: Text(
+        'iOS, Objective-C, Swift',
+        textAlign: TextAlign.start,
+      ).withPadding(EdgeInsets.only(top: 20, bottom: 20, left: 15, right: 15)),
       decoration: BoxDecoration(
-          color: Colors.white, border: Border.all(color: Colors.grey), borderRadius: BorderRadius.all(Radius.circular(3))),
+          color: Colors.white,
+          border: Border.all(color: Colors.grey),
+          borderRadius: BorderRadius.all(Radius.circular(3))),
     ).withPadding(EdgeInsets.all(15));
   }
 }
 
 /// 教育背景：学历、时间、学校、专业
-class BedEducationVM extends BedBaseViewModel {
-  
-}
+class BedEducationVM extends BedBaseViewModel {}
 
 /// 工作经验：时间、公司、职位、工作内容
 class BedJobVM extends BedBaseViewModel {}
+
+/// 导出pdf
+class BedPdfVM extends BedBaseViewModel {
+  Function? tap;
+
+  @override
+  Widget buildContent() {
+    return GestureDetector(
+      child: Container(
+        height: 40,
+        child: Text('导出pdf'),
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+            color: Colors.orange,
+            borderRadius: BorderRadius.all(Radius.circular(10))),
+      ),
+      onTap: () {
+        tap?.call();
+      },
+    ).withPadding(
+      EdgeInsets.only(top: 20, bottom: 20, left: 60, right: 60),
+    );
+  }
+}

@@ -31,6 +31,9 @@
     ],
     "bridge": [
 
+    ],
+    "path_provider_ios": [
+
     ]
   }
 }

@@ -5,11 +5,15 @@ PODS:
   - FlutterPluginRegistrant (0.0.1):
     - bridge
     - Flutter
+    - path_provider_ios
+  - path_provider_ios (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
   - bridge (from `.symlinks/plugins/bridge/ios`)
   - Flutter (from `Flutter`)
   - FlutterPluginRegistrant (from `Flutter/FlutterPluginRegistrant`)
+  - path_provider_ios (from `.symlinks/plugins/path_provider_ios/ios`)
 
 EXTERNAL SOURCES:
   bridge:
@@ -18,11 +22,14 @@ EXTERNAL SOURCES:
     :path: Flutter
   FlutterPluginRegistrant:
     :path: Flutter/FlutterPluginRegistrant
+  path_provider_ios:
+    :path: ".symlinks/plugins/path_provider_ios/ios"
 
 SPEC CHECKSUMS:
   bridge: 19e67a95fbc57851d07b6d3ca114a09188599452
   Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
-  FlutterPluginRegistrant: 86e9ed3702fb562c94a2bbb541c4fded61f946ba
+  FlutterPluginRegistrant: ca3cc5588dba746d8bc6203e85b394c3f5e0a0ee
+  path_provider_ios: 14f3d2fd28c4fdb42f44e0f751d12861c43cee02
 
 PODFILE CHECKSUM: 1a4a4c8498055b871db01a7bd3b4da2fdfe228a2
 
