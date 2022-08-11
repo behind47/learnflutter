@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 /// CustomScrollView 是一个使用slivers创建自定义滚动效果的scrollView
@@ -5,7 +7,7 @@ import 'package:flutter/material.dart';
 /// slivers里的widgets必须生产RenderView对象
 /// 使用controller的ScrollController.initialScrollOffset属性来控制scroll view的初始滚动位置
 
-// 使用一个scroll view 博阿含一个灵活的pinned app bar，一个 grid，一个无限list
+// 使用一个scroll view 包含一个灵活的 pinned app bar，一个 grid，一个无限list
 class MyCusScrollView extends StatelessWidget {
   final cusScrollView1 = CustomScrollView(
     slivers: <Widget>[
@@ -13,7 +15,7 @@ class MyCusScrollView extends StatelessWidget {
         pinned: true,
         expandedHeight: 250.0,
         flexibleSpace: FlexibleSpaceBar(
-          title: Text('demo'),
+          title: Text('sliver app bar'),
         ),
       ),
       SliverGrid(
@@ -33,15 +35,18 @@ class MyCusScrollView extends StatelessWidget {
             crossAxisSpacing: 10.0,
             childAspectRatio: 4.0),
       ),
+      makePersistentHeader('persistent header'),
       SliverFixedExtentList(
-          delegate: SliverChildBuilderDelegate((context, index) => Container(
-                alignment: Alignment.center,
-                color: Colors.lightBlue[100 * (index % 9)],
-                child: Text(
-                  'List Item $index',
-                  style: TextStyle(fontSize: 10),
-                ),
-              )),
+          delegate: SliverChildBuilderDelegate(
+              (context, index) => Container(
+                    alignment: Alignment.center,
+                    color: Colors.lightBlue[100 * (index % 9)],
+                    child: Text(
+                      'List Item $index',
+                      style: TextStyle(fontSize: 10),
+                    ),
+                  ),
+              childCount: 20),
           itemExtent: 50.0)
     ],
   );
@@ -77,5 +82,54 @@ class MyCusScrollView extends StatelessWidget {
   );
 
   @override
-  Widget build(BuildContext context) => cusScrollView2;
+  Widget build(BuildContext context) => cusScrollView1;
+}
+
+SliverPersistentHeader makePersistentHeader(String headerText) {
+  return SliverPersistentHeader(
+    pinned: true,
+    delegate: _SliverAppBarDelegate(
+      minHeight: 60.0,
+      maxHeight: 200.0,
+      child: Container(
+        color: Colors.lightBlue,
+        child: Center(
+          child: Text(headerText, style: TextStyle(fontSize: 18),),
+        ),
+      ),
+    ),
+  );
+}
+
+class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
+  _SliverAppBarDelegate({
+    required this.minHeight,
+    required this.maxHeight,
+    required this.child,
+  });
+
+  final double minHeight;
+  final double maxHeight;
+  final Widget child;
+
+  @override
+  Widget build(
+      BuildContext context, double shrinkOffset, bool overlapsContent) {
+    return SizedBox.expand(
+      child: child,
+    );
+  }
+
+  @override
+  double get minExtent => minHeight;
+
+  @override
+  double get maxExtent => max(maxHeight, minHeight);
+
+  @override
+  bool shouldRebuild(covariant _SliverAppBarDelegate oldDelegate) {
+    return maxHeight != oldDelegate.maxHeight ||
+        minHeight != oldDelegate.minHeight ||
+        child != oldDelegate.child;
+  }
 }
