@@ -47,52 +47,43 @@ class MyCapturePageState extends State<MyCapturePage> {
           title: Text('截图'),
         ),
         body: SingleChildScrollView(
-          child: Column(
-            children: [
-              Container(
-                height: 150,
-                child: CustomPaint(
-                  painter: ShapePainter(color: Colors.blue),
-                ),
-              ),
-              Container(
-                height: 900,
-                color: Colors.green,
-              ),
-            ],
-          ),
-        )
-        // RepaintBoundary(
-        //   key: rootWidgetKey,
-        //   child: ListView(children: [
-        //     Column(
-        //     children: [
-        //       Image.network(
-        //         imageURL,
-        //         width: 300,
-        //         height: 300,
-        //       ),
-        //       TextButton(
-        //           onPressed: () => _capturePng(context), child: Text("截屏")),
-        //       if (images.isNotEmpty)
-        //       SizedBox(
-        //         height: 100,
-        //           child: ListView.builder(
-        //             itemBuilder: (context, index) => Container(child: Image.memory(
-        //               images[index],
-        //               fit: BoxFit.cover,
-        //             ), color: Colors.yellow,),
-        //             itemCount: images.length,
-        //             scrollDirection: Axis.horizontal,
-        //           ),
-        //       ),
-        //       Container(color: Colors.blue, width: 100, height: 100,),
-        //     ],
-        //   ),
-        // ],)
-
-        //   )
-        );
+            child: RepaintBoundary(
+                key: rootWidgetKey,
+                child: 
+                    Column(
+                      children: [
+                        Image.network(
+                          imageURL,
+                          width: 300,
+                          height: 300,
+                        ),
+                        TextButton(
+                            onPressed: () => _capturePng(context),
+                            child: Text("截屏")),
+                        if (images.isNotEmpty)
+                          SizedBox(
+                            height: 100,
+                            child: ListView.builder(
+                              itemBuilder: (context, index) => Container(
+                                child: Image.memory(
+                                  images[index],
+                                  fit: BoxFit.cover,
+                                ),
+                                color: Colors.yellow,
+                              ),
+                              itemCount: images.length,
+                              scrollDirection: Axis.horizontal,
+                            ),
+                          ),
+                        Container(
+                          color: Colors.blue,
+                          width: 100,
+                          height: 100,
+                        ),
+                      ],
+                    ),
+                
+                )));
   }
 }
 

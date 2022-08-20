@@ -16,9 +16,9 @@ class LayoutPageState extends State<LayoutPage> {
       appBar: AppBar(title: Text('布局过渡页')),
       body: ListView(
         children: [
-          buildItem(context, '单子组件布局', SingleLayoutPage()),
-          buildItem(context, '多子组件布局', MultipleLayoutPage()),
-          buildItem(context, '滑动组件布局', MyCusScrollView())
+          buildItem(context, '单子组件布局', '/singleLayout'),
+          buildItem(context, '多子组件布局', '/multipleLayout'),
+          buildItem(context, '滑动组件布局', '/customScrollView')
         ],
       ),
     );

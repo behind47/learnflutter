@@ -1,18 +1,6 @@
-import 'package:learnflutter/my_app.dart';
-import 'package:learnflutter/my_container.dart';
-import 'package:learnflutter/widget/my_custom_scroll_view.dart';
-import 'package:learnflutter/my_tabbar_view.dart';
-import 'package:learnflutter/ffi/native_add_page.dart';
-import 'package:learnflutter/introducation/introducation_page.dart';
-import 'package:learnflutter/paint/paint_page.dart';
 import 'package:learnflutter/util/router_utils.dart';
-import 'package:learnflutter/widget/layout_page.dart';
-import 'package:learnflutter/widget/my_farctionally_sized_box.dart';
-import 'package:learnflutter/widget/my_nested_list.dart';
-import 'package:learnflutter/widget/my_rich_text_page.dart';
 import 'package:flutter/material.dart';
 
-import 'my_capture_page.dart';
 
 class EntryList extends StatefulWidget {
   @override
@@ -24,31 +12,23 @@ class EntryListState extends State<EntryList> {
 
   @override
   Widget build(BuildContext context) {
-    return Navigator(
-      onPopPage: (route, result) {
-        return route.didPop(result);
-      },
-      pages: [
-        MaterialPage(
-            child: ListView(
+    return ListView(
           padding: const EdgeInsets.all(8),
           children: <Widget>[
-            buildItem(context, "MyApp", MyApp()),
-            buildItem(context, '简历模版', IntroducationPage()),
-            buildItem(context, '布局约束实践', LayoutPage()),
-            buildItem(context, "MyTabBarView", MyTabBarView()),
-            buildItem(context, "MyCusScrollView", MyCusScrollView()),
-            buildItem(context, "Container", MyContainer()),
-            buildItem(context, 'Expanded', MyExpanded()),
-            buildItem(context, 'MyFractionallySizedBox', MyFractionallySizedBox()),
-            buildItem(context, 'MyNestedList', MyNestedList()),
-            buildItem(context, '富文本', MyRichTextPage()),
-            buildItem(context, '截图', MyCapturePage()),
-            buildItem(context, '绘制', PaintPage()),
-            buildItem(context, 'FFI', NativeAddPage()),
+            buildItem(context, 'MyApp', '/myapp'),
+            buildItem(context, '简历模版', '/introducation'),
+            buildItem(context, '布局约束实践', '/layout'),
+            buildItem(context, "MyTabBarView", '/tabBarView'),
+            buildItem(context, "MyCusScrollView", '/customScrollView'),
+            buildItem(context, "Container", '/container'),
+            buildItem(context, 'Expanded','/expanded'),
+            buildItem(context, 'MyFractionallySizedBox', '/sizedBox'),
+            buildItem(context, 'MyNestedList', '/nestedList'),
+            buildItem(context, '富文本', '/richText'),
+            buildItem(context, '截图','/capture'),
+            buildItem(context, '绘制', '/paint'),
+            buildItem(context, 'FFI', '/nativeAdd'),
           ],
-        ))
-      ],
     );
   }
 }
