@@ -25,6 +25,8 @@
 **/ios/Flutter/
 **/.ios/Flutter/
 **/ios/Flutter/.last_build_id
+.ios/Runner.xcworkspace/xcuserdata/*
+.ios/Runner.xcworkspace/xcuserdata/
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
