@@ -9,7 +9,8 @@ class MyRichTextPage extends StatelessWidget {
       ),
       body: Text.rich(
         TextSpan(
-          text: 'aksldjg aksldjg aksldjg aksldjg aksldjg aksldjg aksldjg aksldjg aksldjg',
+          text:
+              'aksldjg aksldjg aksldjg aksldjg aksldjg aksldjg aksldjg aksldjg aksldjg',
           style: TextStyle(
             color: Colors.green,
             backgroundColor: Colors.red,
@@ -18,7 +19,12 @@ class MyRichTextPage extends StatelessWidget {
           children: [
             TextSpan(text: '测试字段'),
             TextSpan(text: 'english'),
-            WidgetSpan(child: Image.asset('assets/arrow-right.png', height: 25,), style: TextStyle(backgroundColor: Colors.blue))
+            WidgetSpan(
+                child: Image.asset(
+                  'assets/arrow-right.png',
+                  height: 25,
+                ),
+                style: TextStyle(backgroundColor: Colors.blue))
           ],
         ),
         softWrap: true,
@@ -26,7 +32,10 @@ class MyRichTextPage extends StatelessWidget {
         maxLines: 3,
         textWidthBasis: TextWidthBasis.parent,
         style: TextStyle(backgroundColor: Colors.green),
-        textHeightBehavior: TextHeightBehavior(applyHeightToFirstAscent: true, applyHeightToLastDescent: true, leadingDistribution: TextLeadingDistribution.even),
+        textHeightBehavior: TextHeightBehavior(
+            applyHeightToFirstAscent: true,
+            applyHeightToLastDescent: true,
+            leadingDistribution: TextLeadingDistribution.even),
       ),
     );
   }

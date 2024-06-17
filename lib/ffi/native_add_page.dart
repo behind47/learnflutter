@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:learnflutter/channel/platform_channel.dart';
@@ -23,7 +22,7 @@ class NativeAddPageState extends State<NativeAddPage> {
     //     .lookup<NativeFunction<Int32 Function(Int32, Int32)>>('native_add')
     //     .asFunction();
     // nativeAdd = nativeAddLib.lookupFunction<Int32 Function(Int32, Int32), int Function(int, int)>('native_add');
-    
+
     // getTag = nativeAddLib
     //     .lookup<NativeFunction<Int32 Function()>>('native_getTag')
     //     .asFunction();
