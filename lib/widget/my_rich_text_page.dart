@@ -28,7 +28,7 @@ class MyRichTextPage extends StatelessWidget {
           ],
         ),
         softWrap: true,
-        textScaleFactor: 1,
+        textScaler: TextScaler.linear(1),
         maxLines: 3,
         textWidthBasis: TextWidthBasis.parent,
         style: TextStyle(backgroundColor: Colors.green),

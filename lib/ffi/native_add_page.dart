@@ -10,7 +10,6 @@ class NativeAddPage extends StatefulWidget {
 class NativeAddPageState extends State<NativeAddPage> {
   String _platformVersion = 'Unknown';
   // late final DynamicLibrary nativeAddLib;
-  // late final int Function(int x, int y) nativeAdd;
   // late final int Function() getTag;
   String _batteryLevel = '';
 
@@ -69,7 +68,7 @@ class NativeAddPageState extends State<NativeAddPage> {
           children: [
             Text('Running on: $_platformVersion\n'),
             // Text('1+1=${nativeAdd(1, 1)}'),
-            // Text('device batteryLevel: $_batteryLevel'),
+            Text('device batteryLevel: $_batteryLevel'),
             // Text('native tag : ${getTag()}'),
             TextButton(
                 onPressed: () {

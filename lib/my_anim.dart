@@ -8,16 +8,17 @@ class MyAnim extends StatefulWidget {
 }
 
 class MyAnimState extends State<MyAnim> with TickerProviderStateMixin {
-  late AnimationController _controller;
-  late Animation _animation;
-  late Tween _tween;
+  // late AnimationController _controller;
+  // late Animation _animation;
+  // late Tween _tween;
 
   @override
   void initState() {
-    _controller = AnimationController(vsync: this);
+    super.initState();
+    // _controller = AnimationController(vsync: this);
     AlignmentTween(begin: Alignment.topLeft, end: Alignment.topRight)
         .chain(CurveTween(curve: Curves.easeIn));
-    _tween = IntTween();
+    // _tween = IntTween();
   }
 
   @override
