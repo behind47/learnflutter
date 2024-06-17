@@ -5,15 +5,16 @@ PODS:
   - FlutterPluginRegistrant (0.0.1):
     - bridge
     - Flutter
-    - path_provider_ios
-  - path_provider_ios (0.0.1):
+    - path_provider_foundation
+  - path_provider_foundation (0.0.1):
     - Flutter
+    - FlutterMacOS
 
 DEPENDENCIES:
   - bridge (from `.symlinks/plugins/bridge/ios`)
   - Flutter (from `Flutter`)
   - FlutterPluginRegistrant (from `Flutter/FlutterPluginRegistrant`)
-  - path_provider_ios (from `.symlinks/plugins/path_provider_ios/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
 
 EXTERNAL SOURCES:
   bridge:
@@ -22,15 +23,15 @@ EXTERNAL SOURCES:
     :path: Flutter
   FlutterPluginRegistrant:
     :path: Flutter/FlutterPluginRegistrant
-  path_provider_ios:
-    :path: ".symlinks/plugins/path_provider_ios/ios"
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/darwin"
 
 SPEC CHECKSUMS:
   bridge: 19e67a95fbc57851d07b6d3ca114a09188599452
-  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
-  FlutterPluginRegistrant: ca3cc5588dba746d8bc6203e85b394c3f5e0a0ee
-  path_provider_ios: 14f3d2fd28c4fdb42f44e0f751d12861c43cee02
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  FlutterPluginRegistrant: 45484738953c68f665c77129d4e3f91ba623bc0d
+  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
 
-PODFILE CHECKSUM: 1a4a4c8498055b871db01a7bd3b4da2fdfe228a2
+PODFILE CHECKSUM: bc556685c0a7d0997a5c231a267e1fd295572df8
 
 COCOAPODS: 1.11.3

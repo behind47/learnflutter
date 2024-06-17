@@ -11,7 +11,7 @@
     "Flutter Dev Team": "flutter-dev@googlegroups.com"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "12.0"
   },
   "source_files": [
     "Classes",
@@ -32,7 +32,7 @@
     "bridge": [
 
     ],
-    "path_provider_ios": [
+    "path_provider_foundation": [
 
     ]
   }

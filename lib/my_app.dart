@@ -95,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),
@@ -135,7 +135,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
       ),
     );
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
-      Overlay.of(context)!.insert(overlayEntry);
+      Overlay.of(context).insert(overlayEntry);
     });
   }
 }

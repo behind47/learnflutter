@@ -6,7 +6,7 @@ This application makes use of the following third party libraries:
 TODO: Add your license here.
 
 
-## path_provider_ios
+## path_provider_foundation
 
 Copyright 2013 The Flutter Authors. All rights reserved.
 
